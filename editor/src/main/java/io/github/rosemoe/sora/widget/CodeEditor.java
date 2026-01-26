@@ -515,7 +515,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
         return isLineNumberEnabled() ?
                 measureLineNumber() + dividerMarginLeft + dividerMarginRight + dividerWidth +
                         (renderer.hasSideHintIcons() ? getRowHeight() : 0) :
-                dpUnit * 5;
+                dpUnit * 12;
     }
 
     /**
