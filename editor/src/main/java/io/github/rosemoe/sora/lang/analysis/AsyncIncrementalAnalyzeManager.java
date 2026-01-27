@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.lang.analysis;
+package io.github.abc15018045126.sora.lang.analysis;
 
 import android.os.Message;
 import android.util.Log;
@@ -38,23 +38,23 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import io.github.rosemoe.sora.lang.styling.CodeBlock;
-import io.github.rosemoe.sora.lang.styling.Span;
-import io.github.rosemoe.sora.lang.styling.SpanFactory;
-import io.github.rosemoe.sora.lang.styling.Spans;
-import io.github.rosemoe.sora.lang.styling.Styles;
-import io.github.rosemoe.sora.lang.util.BaseAnalyzeManager;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
+import io.github.abc15018045126.sora.lang.styling.CodeBlock;
+import io.github.abc15018045126.sora.lang.styling.Span;
+import io.github.abc15018045126.sora.lang.styling.SpanFactory;
+import io.github.abc15018045126.sora.lang.styling.Spans;
+import io.github.abc15018045126.sora.lang.styling.Styles;
+import io.github.abc15018045126.sora.lang.util.BaseAnalyzeManager;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme;
 
 /**
  * Asynchronous base implementation of {@link IncrementalAnalyzeManager}
  * <p>
  * {@inheritDoc}
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public abstract class AsyncIncrementalAnalyzeManager<S, T> extends BaseAnalyzeManager implements IncrementalAnalyzeManager<S, T> {
 
@@ -601,3 +601,4 @@ public abstract class AsyncIncrementalAnalyzeManager<S, T> extends BaseAnalyzeMa
 
 
 }
+

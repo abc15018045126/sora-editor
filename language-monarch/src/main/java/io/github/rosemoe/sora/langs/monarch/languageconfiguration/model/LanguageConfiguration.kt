@@ -12,7 +12,7 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.languageconfiguration.model
+package io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model
 
 import com.squareup.moshi.JsonClass
 import io.github.dingyi222666.regex.Regex

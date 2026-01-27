@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,11 +18,11 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lang
+package io.github.abc15018045126.sora.lang
 
 import android.graphics.Color
 import android.util.Log
@@ -30,29 +30,29 @@ import androidx.core.graphics.ColorUtils
 import com.itsaky.androidide.treesitter.TSQuery
 import com.itsaky.androidide.treesitter.TSQueryCapture
 import com.itsaky.androidide.treesitter.java.TSLanguageJava
-import io.github.rosemoe.sora.editor.ts.LocalsCaptureSpec
-import io.github.rosemoe.sora.editor.ts.TsAnalyzeManager
-import io.github.rosemoe.sora.editor.ts.TsLanguage
-import io.github.rosemoe.sora.editor.ts.TsLanguageSpec
-import io.github.rosemoe.sora.editor.ts.TsTheme
-import io.github.rosemoe.sora.editor.ts.TsThemeBuilder
-import io.github.rosemoe.sora.editor.ts.spans.DefaultSpanFactory
-import io.github.rosemoe.sora.lang.styling.Span
-import io.github.rosemoe.sora.lang.styling.SpanFactory
-import io.github.rosemoe.sora.lang.styling.Styles
-import io.github.rosemoe.sora.lang.styling.TextStyle.makeStyle
-import io.github.rosemoe.sora.lang.styling.span.SpanConstColorResolver
-import io.github.rosemoe.sora.lang.styling.span.SpanExtAttrs
-import io.github.rosemoe.sora.lang.styling.textStyle
-import io.github.rosemoe.sora.text.ContentReference
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.COMMENT
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.FUNCTION_NAME
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.IDENTIFIER_NAME
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.IDENTIFIER_VAR
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.KEYWORD
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.LITERAL
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme.OPERATOR
+import io.github.abc15018045126.sora.editor.ts.LocalsCaptureSpec
+import io.github.abc15018045126.sora.editor.ts.TsAnalyzeManager
+import io.github.abc15018045126.sora.editor.ts.TsLanguage
+import io.github.abc15018045126.sora.editor.ts.TsLanguageSpec
+import io.github.abc15018045126.sora.editor.ts.TsTheme
+import io.github.abc15018045126.sora.editor.ts.TsThemeBuilder
+import io.github.abc15018045126.sora.editor.ts.spans.DefaultSpanFactory
+import io.github.abc15018045126.sora.lang.styling.Span
+import io.github.abc15018045126.sora.lang.styling.SpanFactory
+import io.github.abc15018045126.sora.lang.styling.Styles
+import io.github.abc15018045126.sora.lang.styling.TextStyle.makeStyle
+import io.github.abc15018045126.sora.lang.styling.span.SpanConstColorResolver
+import io.github.abc15018045126.sora.lang.styling.span.SpanExtAttrs
+import io.github.abc15018045126.sora.lang.styling.textStyle
+import io.github.abc15018045126.sora.text.ContentReference
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.COMMENT
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.FUNCTION_NAME
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.IDENTIFIER_NAME
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.IDENTIFIER_VAR
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.KEYWORD
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.LITERAL
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme.OPERATOR
 
 /**
  * Tree Sitter language for Java.

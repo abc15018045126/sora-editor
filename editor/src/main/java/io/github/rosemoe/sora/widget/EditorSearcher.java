@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget;
+package io.github.abc15018045126.sora.widget;
 
 import android.app.ProgressDialog;
 import android.widget.Toast;
@@ -34,19 +34,19 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import io.github.rosemoe.sora.I18nConfig;
-import io.github.rosemoe.sora.R;
-import io.github.rosemoe.sora.event.ContentChangeEvent;
-import io.github.rosemoe.sora.event.PublishSearchResultEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.TextUtils;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.util.LongArrayList;
-import io.github.rosemoe.sora.util.regex.RegexBackrefGrammar;
-import io.github.rosemoe.sora.util.regex.RegexBackrefHelper;
-import io.github.rosemoe.sora.util.regex.RegexBackrefParser;
-import io.github.rosemoe.sora.util.regex.RegexBackrefToken;
+import io.github.abc15018045126.sora.I18nConfig;
+import io.github.abc15018045126.sora.R;
+import io.github.abc15018045126.sora.event.ContentChangeEvent;
+import io.github.abc15018045126.sora.event.PublishSearchResultEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.TextUtils;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.util.LongArrayList;
+import io.github.abc15018045126.sora.util.regex.RegexBackrefGrammar;
+import io.github.abc15018045126.sora.util.regex.RegexBackrefHelper;
+import io.github.abc15018045126.sora.util.regex.RegexBackrefParser;
+import io.github.abc15018045126.sora.util.regex.RegexBackrefToken;
 
 /**
  * Search text in editor.
@@ -59,7 +59,7 @@ import io.github.rosemoe.sora.util.regex.RegexBackrefToken;
  *
  * @see PublishSearchResultEvent
  * @see SearchOptions
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class EditorSearcher {
 
@@ -550,3 +550,4 @@ public class EditorSearcher {
     }
 
 }
+

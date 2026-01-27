@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,25 +18,25 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.lang.styling;
+package io.github.abc15018045126.sora.lang.styling;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.Collection;
 
-import io.github.rosemoe.sora.lang.styling.color.ConstColor;
-import io.github.rosemoe.sora.lang.styling.color.ResolvableColor;
-import io.github.rosemoe.sora.lang.styling.span.SpanExt;
-import io.github.rosemoe.sora.lang.styling.span.SpanExtAttrs;
+import io.github.abc15018045126.sora.lang.styling.color.ConstColor;
+import io.github.abc15018045126.sora.lang.styling.color.ResolvableColor;
+import io.github.abc15018045126.sora.lang.styling.span.SpanExt;
+import io.github.abc15018045126.sora.lang.styling.span.SpanExtAttrs;
 
 /**
  * Span describes the appearance and other attributes of text segment
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public interface Span {
 
@@ -200,3 +200,4 @@ public interface Span {
     }
 
 }
+

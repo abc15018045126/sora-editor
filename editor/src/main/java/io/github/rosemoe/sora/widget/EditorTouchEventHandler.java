@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget;
+package io.github.abc15018045126.sora.widget;
 
 import android.content.res.Resources;
 import android.graphics.PointF;
@@ -38,35 +38,35 @@ import android.view.ViewConfiguration;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import io.github.rosemoe.sora.annotations.UnsupportedUserUsage;
-import io.github.rosemoe.sora.event.ClickEvent;
-import io.github.rosemoe.sora.event.ContextClickEvent;
-import io.github.rosemoe.sora.event.DoubleClickEvent;
-import io.github.rosemoe.sora.event.DragSelectStopEvent;
-import io.github.rosemoe.sora.event.EditorMotionEvent;
-import io.github.rosemoe.sora.event.HandleStateChangeEvent;
-import io.github.rosemoe.sora.event.InterceptTarget;
-import io.github.rosemoe.sora.event.LongPressEvent;
-import io.github.rosemoe.sora.event.ScrollEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.event.SideIconClickEvent;
-import io.github.rosemoe.sora.graphics.RectUtils;
-import io.github.rosemoe.sora.lang.styling.Span;
-import io.github.rosemoe.sora.lang.styling.StylesUtils;
-import io.github.rosemoe.sora.lang.styling.line.LineSideIcon;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.TextRange;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.util.Numbers;
-import io.github.rosemoe.sora.widget.component.Magnifier;
-import io.github.rosemoe.sora.widget.style.SelectionHandleStyle;
+import io.github.abc15018045126.sora.annotations.UnsupportedUserUsage;
+import io.github.abc15018045126.sora.event.ClickEvent;
+import io.github.abc15018045126.sora.event.ContextClickEvent;
+import io.github.abc15018045126.sora.event.DoubleClickEvent;
+import io.github.abc15018045126.sora.event.DragSelectStopEvent;
+import io.github.abc15018045126.sora.event.EditorMotionEvent;
+import io.github.abc15018045126.sora.event.HandleStateChangeEvent;
+import io.github.abc15018045126.sora.event.InterceptTarget;
+import io.github.abc15018045126.sora.event.LongPressEvent;
+import io.github.abc15018045126.sora.event.ScrollEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.event.SideIconClickEvent;
+import io.github.abc15018045126.sora.graphics.RectUtils;
+import io.github.abc15018045126.sora.lang.styling.Span;
+import io.github.abc15018045126.sora.lang.styling.StylesUtils;
+import io.github.abc15018045126.sora.lang.styling.line.LineSideIcon;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.TextRange;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.util.Numbers;
+import io.github.abc15018045126.sora.widget.component.Magnifier;
+import io.github.abc15018045126.sora.widget.style.SelectionHandleStyle;
 import kotlin.jvm.functions.Function5;
 import kotlin.jvm.functions.Function7;
 
 /**
  * Handles touch events of editor
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 @SuppressWarnings("CanBeFinal")
 public final class EditorTouchEventHandler implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener, ScaleGestureDetector.OnScaleGestureListener {
@@ -1303,3 +1303,4 @@ public final class EditorTouchEventHandler implements GestureDetector.OnGestureL
         }
     }
 }
+

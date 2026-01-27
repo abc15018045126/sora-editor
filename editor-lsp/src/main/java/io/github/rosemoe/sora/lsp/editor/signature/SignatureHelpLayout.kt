@@ -1,9 +1,9 @@
-package io.github.rosemoe.sora.lsp.editor.signature
+package io.github.abc15018045126.sora.lsp.editor.signature
 
 import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 import org.eclipse.lsp4j.SignatureHelp
 
 interface SignatureHelpLayout {

@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.langs.java;
+package io.github.abc15018045126.sora.langs.java;
 
 import static java.lang.Character.isWhitespace;
 
@@ -30,34 +30,34 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import io.github.rosemoe.sora.lang.EmptyLanguage;
-import io.github.rosemoe.sora.lang.Language;
-import io.github.rosemoe.sora.lang.QuickQuoteHandler;
-import io.github.rosemoe.sora.lang.analysis.AnalyzeManager;
-import io.github.rosemoe.sora.lang.completion.CompletionHelper;
-import io.github.rosemoe.sora.lang.completion.CompletionPublisher;
-import io.github.rosemoe.sora.lang.completion.IdentifierAutoComplete;
-import io.github.rosemoe.sora.lang.completion.SimpleSnippetCompletionItem;
-import io.github.rosemoe.sora.lang.completion.SnippetDescription;
-import io.github.rosemoe.sora.lang.completion.snippet.CodeSnippet;
-import io.github.rosemoe.sora.lang.completion.snippet.parser.CodeSnippetParser;
-import io.github.rosemoe.sora.lang.format.Formatter;
-import io.github.rosemoe.sora.lang.smartEnter.NewlineHandleResult;
-import io.github.rosemoe.sora.lang.smartEnter.NewlineHandler;
-import io.github.rosemoe.sora.lang.styling.Styles;
-import io.github.rosemoe.sora.lang.styling.StylesUtils;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.ContentReference;
-import io.github.rosemoe.sora.text.TextUtils;
-import io.github.rosemoe.sora.util.MyCharacter;
-import io.github.rosemoe.sora.widget.SymbolPairMatch;
+import io.github.abc15018045126.sora.lang.EmptyLanguage;
+import io.github.abc15018045126.sora.lang.Language;
+import io.github.abc15018045126.sora.lang.QuickQuoteHandler;
+import io.github.abc15018045126.sora.lang.analysis.AnalyzeManager;
+import io.github.abc15018045126.sora.lang.completion.CompletionHelper;
+import io.github.abc15018045126.sora.lang.completion.CompletionPublisher;
+import io.github.abc15018045126.sora.lang.completion.IdentifierAutoComplete;
+import io.github.abc15018045126.sora.lang.completion.SimpleSnippetCompletionItem;
+import io.github.abc15018045126.sora.lang.completion.SnippetDescription;
+import io.github.abc15018045126.sora.lang.completion.snippet.CodeSnippet;
+import io.github.abc15018045126.sora.lang.completion.snippet.parser.CodeSnippetParser;
+import io.github.abc15018045126.sora.lang.format.Formatter;
+import io.github.abc15018045126.sora.lang.smartEnter.NewlineHandleResult;
+import io.github.abc15018045126.sora.lang.smartEnter.NewlineHandler;
+import io.github.abc15018045126.sora.lang.styling.Styles;
+import io.github.abc15018045126.sora.lang.styling.StylesUtils;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.ContentReference;
+import io.github.abc15018045126.sora.text.TextUtils;
+import io.github.abc15018045126.sora.util.MyCharacter;
+import io.github.abc15018045126.sora.widget.SymbolPairMatch;
 
 /**
  * Java language.
  * Simple implementation.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class JavaLanguage implements Language {
 
@@ -206,3 +206,4 @@ public class JavaLanguage implements Language {
     }
 
 }
+

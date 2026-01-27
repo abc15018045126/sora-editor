@@ -12,7 +12,7 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.languageconfiguration.model
+package io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model
 
 interface BaseAutoClosingPair {
     val open: String

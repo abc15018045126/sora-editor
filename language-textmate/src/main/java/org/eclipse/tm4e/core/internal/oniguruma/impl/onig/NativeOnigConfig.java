@@ -13,7 +13,7 @@
  */
 package org.eclipse.tm4e.core.internal.oniguruma.impl.onig;
 
-import io.github.rosemoe.oniguruma.OnigNative;
+import io.github.abc15018045126.oniguruma.OnigNative;
 
 public class NativeOnigConfig {
 

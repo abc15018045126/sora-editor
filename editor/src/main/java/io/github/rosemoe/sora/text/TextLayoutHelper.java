@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.text;
+package io.github.abc15018045126.sora.text;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
@@ -38,7 +38,7 @@ import androidx.annotation.NonNull;
  * Helper class for indirectly calling Paint#getTextRunCursor(), which is
  * responsible for cursor controlling.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class TextLayoutHelper {
 
@@ -119,3 +119,4 @@ public class TextLayoutHelper {
     }
 
 }
+

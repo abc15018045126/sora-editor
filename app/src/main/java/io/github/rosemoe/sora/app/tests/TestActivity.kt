@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,22 +18,22 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.app.tests
+package io.github.abc15018045126.sora.app.tests
 
 import android.content.res.Configuration
 import android.graphics.Typeface
 import android.os.Bundle
-import io.github.rosemoe.sora.app.BaseEditorActivity
-import io.github.rosemoe.sora.app.switchThemeIfRequired
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticDetail
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticRegion
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticsContainer
-import io.github.rosemoe.sora.lang.diagnostic.Quickfix
-import io.github.rosemoe.sora.langs.java.JavaLanguage
+import io.github.abc15018045126.sora.app.BaseEditorActivity
+import io.github.abc15018045126.sora.app.switchThemeIfRequired
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticDetail
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticRegion
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticsContainer
+import io.github.abc15018045126.sora.lang.diagnostic.Quickfix
+import io.github.abc15018045126.sora.langs.java.JavaLanguage
 
 class TestActivity : BaseEditorActivity() {
 

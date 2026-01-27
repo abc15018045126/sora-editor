@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2025  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2025  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,19 +18,19 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.editor
+package io.github.abc15018045126.sora.lsp.editor
 
 import android.graphics.Color
-import io.github.rosemoe.sora.lang.styling.color.ConstColor
-import io.github.rosemoe.sora.lang.styling.inlayHint.ColorInlayHint
-import io.github.rosemoe.sora.lsp.events.EventType
-import io.github.rosemoe.sora.lsp.events.color.documentColor
-import io.github.rosemoe.sora.lsp.events.inlayhint.inlayHint
-import io.github.rosemoe.sora.text.CharPosition
+import io.github.abc15018045126.sora.lang.styling.color.ConstColor
+import io.github.abc15018045126.sora.lang.styling.inlayHint.ColorInlayHint
+import io.github.abc15018045126.sora.lsp.events.EventType
+import io.github.abc15018045126.sora.lsp.events.color.documentColor
+import io.github.abc15018045126.sora.lsp.events.inlayhint.inlayHint
+import io.github.abc15018045126.sora.text.CharPosition
 import org.eclipse.lsp4j.ColorInformation
 import org.eclipse.lsp4j.InlayHint
 import kotlin.contracts.ExperimentalContracts
@@ -73,7 +73,7 @@ fun List<InlayHint>.inlayHintToDisplay() = map {
     val text = if (it.label.isLeft) it.label.left else {
         it.label.right[0].value
     }
-    io.github.rosemoe.sora.lang.styling.inlayHint.TextInlayHint(
+    io.github.abc15018045126.sora.lang.styling.inlayHint.TextInlayHint(
         it.position.line,
         it.position.character,
         text
@@ -103,4 +103,5 @@ inline fun <T> List<T>?.normalizeList(): List<T>? {
     }
     return if (this.isNullOrEmpty()) null else this
 }
+
 

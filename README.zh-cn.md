@@ -2,10 +2,10 @@
 
 ![Banner](/images/editor_banner.jpg)
 ----
-[![CI](https://github.com/Rosemoe/CodeEditor/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/Rosemoe/CodeEditor/actions/workflows/gradle.yml)
-[![GitHub license](https://img.shields.io/github/license/Rosemoe/CodeEditor)](https://github.com/Rosemoe/CodeEditor/blob/main/LICENSE)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.rosemoe/editor.svg?label=Maven%20Central)]((https://search.maven.org/search?q=io.github.rosemoe%20editor))   
-[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/rosemoe_code_editor)
+[![CI](https://github.com/abc15018045126/sora-editor/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/abc15018045126/sora-editor/actions/workflows/gradle.yml)
+[![GitHub license](https://img.shields.io/github/license/abc15018045126/sora-editor)](https://github.com/abc15018045126/sora-editor/blob/main/LICENSE)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.abc15018045126/editor.svg?label=Maven%20Central)]((https://search.maven.org/search?q=io.github.abc15018045126%20editor))   
+[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/abc15018045126_code_editor)
 [![QQ](https://img.shields.io/badge/Join-QQ_Group-ff69b4)](https://jq.qq.com/?_wv=1027&k=n68uxQws)
 
 sora-editor是一款高效的安卓代码编辑器
@@ -54,20 +54,20 @@ sora-editor是一款高效的安卓代码编辑器
 ## 讨论
 
 * QQ群:[734652304](https://qm.qq.com/q/kKBqRsVrQ4)
-* [Telegram 群组](https://t.me/rosemoe_code_editor)
+* [Telegram 群组](https://t.me/abc15018045126_code_editor)
 
 ## 贡献者
 
-<a href="https://github.com/Rosemoe/sora-editor/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Rosemoe/sora-editor" />
+<a href="https://github.com/abc15018045126/sora-editor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abc15018045126/sora-editor" />
 </a>
 
 ## 许可证
 
 ```
 sora-editor - the awesome code editor for Android
-https://github.com/Rosemoe/sora-editor
-Copyright (C) 2020-2026  Rosemoe
+https://github.com/abc15018045126/sora-editor
+Copyright (C) 2020-2026  abc15018045126
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
@@ -84,7 +84,7 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
 USA
 
-Please contact Rosemoe by email 2073412493@qq.com if you need
+Please contact abc15018045126 by email 2073412493@qq.com if you need
 additional information or have any questions
 ```
 
@@ -94,3 +94,5 @@ additional information or have any questions
 提供的[IntelliJ IDEA](https://www.jetbrains.com/idea/?from=CodeEditor)等IDE的免费许可证。
 
 [<img src=".github/jetbrains-variant-3.png" width="200"/>](https://www.jetbrains.com/?from=CodeEditor)
+
+

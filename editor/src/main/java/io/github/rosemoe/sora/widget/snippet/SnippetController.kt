@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,42 +18,42 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.widget.snippet
+package io.github.abc15018045126.sora.widget.snippet
 
 import android.util.Log
-import io.github.rosemoe.sora.event.ContentChangeEvent
-import io.github.rosemoe.sora.event.InterceptTarget
-import io.github.rosemoe.sora.event.SelectionChangeEvent
-import io.github.rosemoe.sora.event.SnippetEvent
-import io.github.rosemoe.sora.lang.completion.snippet.CodeSnippet
-import io.github.rosemoe.sora.lang.completion.snippet.InterpolatedShellItem
-import io.github.rosemoe.sora.lang.completion.snippet.PlaceholderDefinition
-import io.github.rosemoe.sora.lang.completion.snippet.PlaceholderItem
-import io.github.rosemoe.sora.lang.completion.snippet.PlainPlaceholderElement
-import io.github.rosemoe.sora.lang.completion.snippet.PlainTextItem
-import io.github.rosemoe.sora.lang.completion.snippet.SnippetItem
-import io.github.rosemoe.sora.lang.completion.snippet.VariableItem
-import io.github.rosemoe.sora.widget.CodeEditor
-import io.github.rosemoe.sora.widget.component.EditorAutoCompletion
-import io.github.rosemoe.sora.widget.getComponent
-import io.github.rosemoe.sora.widget.snippet.variable.ClipboardBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.CommentBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.CompositeSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.EditorBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.FileBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.RandomBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.TimeBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.snippet.variable.WorkspaceBasedSnippetVariableResolver
-import io.github.rosemoe.sora.widget.subscribeEvent
+import io.github.abc15018045126.sora.event.ContentChangeEvent
+import io.github.abc15018045126.sora.event.InterceptTarget
+import io.github.abc15018045126.sora.event.SelectionChangeEvent
+import io.github.abc15018045126.sora.event.SnippetEvent
+import io.github.abc15018045126.sora.lang.completion.snippet.CodeSnippet
+import io.github.abc15018045126.sora.lang.completion.snippet.InterpolatedShellItem
+import io.github.abc15018045126.sora.lang.completion.snippet.PlaceholderDefinition
+import io.github.abc15018045126.sora.lang.completion.snippet.PlaceholderItem
+import io.github.abc15018045126.sora.lang.completion.snippet.PlainPlaceholderElement
+import io.github.abc15018045126.sora.lang.completion.snippet.PlainTextItem
+import io.github.abc15018045126.sora.lang.completion.snippet.SnippetItem
+import io.github.abc15018045126.sora.lang.completion.snippet.VariableItem
+import io.github.abc15018045126.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.widget.component.EditorAutoCompletion
+import io.github.abc15018045126.sora.widget.getComponent
+import io.github.abc15018045126.sora.widget.snippet.variable.ClipboardBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.CommentBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.CompositeSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.EditorBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.FileBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.RandomBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.TimeBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.snippet.variable.WorkspaceBasedSnippetVariableResolver
+import io.github.abc15018045126.sora.widget.subscribeEvent
 
 /**
  * Manage snippet editing in editor
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 class SnippetController(private val editor: CodeEditor) {
 

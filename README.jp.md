@@ -2,10 +2,10 @@
 
 ![Banner](/images/editor_banner.jpg)
 ----
-[![CI](https://github.com/Rosemoe/CodeEditor/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/Rosemoe/CodeEditor/actions/workflows/gradle.yml)
-[![GitHub license](https://img.shields.io/github/license/Rosemoe/CodeEditor)](https://github.com/Rosemoe/CodeEditor/blob/main/LICENSE)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.rosemoe/editor.svg?label=Maven%20Central)]((https://search.maven.org/search?q=io.github.rosemoe%20editor))   
-[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/rosemoe_code_editor)
+[![CI](https://github.com/abc15018045126/sora-editor/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/abc15018045126/sora-editor/actions/workflows/gradle.yml)
+[![GitHub license](https://img.shields.io/github/license/abc15018045126/sora-editor)](https://github.com/abc15018045126/sora-editor/blob/main/LICENSE)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.abc15018045126/editor.svg?label=Maven%20Central)]((https://search.maven.org/search?q=io.github.abc15018045126%20editor))   
+[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/abc15018045126_code_editor)
 [![QQ](https://img.shields.io/badge/Join-QQ_Group-ff69b4)](https://jq.qq.com/?_wv=1027&k=n68uxQws)
 
 sora-editor は効率的な Android コードエディターです
@@ -17,7 +17,7 @@ sora-editor は効率的な Android コードエディターです
 
 ***このプロジェクトはまだ開発中ですから、IssueやPRは歓迎です***
 
-このプロジェクトを直接クーロンするではなく、[Releases](https://github.com/Rosemoe/CodeEditor/releases) からダウンロードしてください。
+このプロジェクトを直接クーロンするではなく、[Releases](https://github.com/abc15018045126/sora-editor/releases) からダウンロードしてください。
 
 
 ## 特徴
@@ -42,7 +42,7 @@ sora-editor は効率的な Android コードエディターです
 
 物理キーボードを使用する場合、ショートカット キーを使用してさまざまなテキスト操作を実行できます。
 
-エディターはデフォルトでいくつかのショートカット キーをサポートしていますが、[`KeyBindingEvent`](https://github.com/Rosemoe/sora-editor/blob/main/editor/src/main/java/io/github/rosemoe/sora/event/KeyBindingEvent.java) をサブスクライブすることができます。それを処理して独自のショートカット キーを実装します。もちろん、デフォルトのショートカット キーのアクションをオーバーライドしてカスタム アクションを実行することもできます。
+エディターはデフォルトでいくつかのショートカット キーをサポートしていますが、[`KeyBindingEvent`](https://github.com/abc15018045126/sora-editor/blob/main/editor/src/main/java/io/github/abc15018045126/sora/event/KeyBindingEvent.java) をサブスクライブすることができます。それを処理して独自のショートカット キーを実装します。もちろん、デフォルトのショートカット キーのアクションをオーバーライドしてカスタム アクションを実行することもできます。
 
 現在のエディターでサポートされているショートカット キーのほとんどは、Android Studio/Intellij IDEA のショートカット キーと似ています。[サポートされているショートカット キー](./keybindings.md) を参照してください。
 
@@ -60,8 +60,8 @@ sora-editor は効率的な Android コードエディターです
 
 ```Gradle
 dependencies {
-    implementation(platform("io.github.Rosemoe:editor-bom:<versionName>"))
-    implementation("io.github.Rosemoe:<moduleName>")
+    implementation(platform("io.github.abc15018045126:editor-bom:<versionName>"))
+    implementation("io.github.abc15018045126:<moduleName>")
 }
 ```
 
@@ -80,25 +80,25 @@ dependencies {
 　エディターに [tree-sitter](https://tree-sitter.github.io/tree-sitter/) サポートを提供します。これを使用すると、コードを抽象構文ツリーに迅速かつ段階的に解析することができ、正確な強調表示と補完の提供に役立ちます。このモジュールはトランジションとハイライトのサポートのみを提供することに注意してください。   
    [android-tree-sitter](https://github.com/AndroidIDEOfficial/android-tree-sitter/) プロジェクトによって提供される Java バインディング ライブラリを感謝します。
 
-最新のエディターのバージョンは、上部のバッジまたは [Releases](https://github.com/Rosemoe/CodeEditor/releases) から見つけることができます。
+最新のエディターのバージョンは、上部のバッジまたは [Releases](https://github.com/abc15018045126/sora-editor/releases) から見つけることができます。
 
 ## ディスカッション
 
 * QQ グループ: [734652304](https://qm.qq.com/q/kKBqRsVrQ4)
-* [Telegram グループ](https://t.me/rosemoe_code_editor)
+* [Telegram グループ](https://t.me/abc15018045126_code_editor)
 
 ## 貢献者
 
-<a href="https://github.com/Rosemoe/sora-editor/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Rosemoe/sora-editor" />
+<a href="https://github.com/abc15018045126/sora-editor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abc15018045126/sora-editor" />
 </a>
 
 ## ライセンス
 
 ```
 sora-editor - the awesome code editor for Android
-https://github.com/Rosemoe/sora-editor
-Copyright (C) 2020-2026  Rosemoe
+https://github.com/abc15018045126/sora-editor
+Copyright (C) 2020-2026  abc15018045126
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
@@ -115,7 +115,7 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
 USA
 
-Please contact Rosemoe by email 2073412493@qq.com if you need
+Please contact abc15018045126 by email 2073412493@qq.com if you need
 additional information or have any questions
 ```
 
@@ -126,3 +126,4 @@ additional information or have any questions
 
 
 [<img src=".github/jetbrains-variant-3.png" width="200"/>](https://www.jetbrains.com/?from=CodeEditor)
+

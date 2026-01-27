@@ -15,7 +15,7 @@ import org.eclipse.jdt.annotation.Nullable;
 import org.eclipse.tm4e.languageconfiguration.internal.model.CharacterPair;
 import org.eclipse.tm4e.languageconfiguration.internal.model.CommentRule;
 
-import io.github.rosemoe.sora.text.Content;
+import io.github.abc15018045126.sora.text.Content;
 
 public final class CommentSupport {
 

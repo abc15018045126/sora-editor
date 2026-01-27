@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2025  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2025  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,12 +18,12 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.app.lsp;
+package io.github.abc15018045126.sora.app.lsp;
 
-import static io.github.rosemoe.sora.app.UtilsKt.switchThemeIfRequired;
+import static io.github.abc15018045126.sora.app.UtilsKt.switchThemeIfRequired;
 
 import android.content.Intent;
 import android.content.res.Configuration;
@@ -59,23 +59,23 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import io.github.rosemoe.sora.app.BaseEditorActivity;
-import io.github.rosemoe.sora.app.R;
-import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme;
-import io.github.rosemoe.sora.langs.textmate.TextMateLanguage;
-import io.github.rosemoe.sora.langs.textmate.registry.FileProviderRegistry;
-import io.github.rosemoe.sora.langs.textmate.registry.GrammarRegistry;
-import io.github.rosemoe.sora.langs.textmate.registry.ThemeRegistry;
-import io.github.rosemoe.sora.langs.textmate.registry.dsl.LanguageDefinitionListBuilder;
-import io.github.rosemoe.sora.langs.textmate.registry.model.ThemeModel;
-import io.github.rosemoe.sora.langs.textmate.registry.provider.AssetsFileResolver;
-import io.github.rosemoe.sora.lsp.client.connection.LocalSocketStreamConnectionProvider;
-import io.github.rosemoe.sora.lsp.client.languageserver.serverdefinition.CustomLanguageServerDefinition;
-import io.github.rosemoe.sora.lsp.client.languageserver.wrapper.EventHandler;
-import io.github.rosemoe.sora.lsp.editor.LspEditor;
-import io.github.rosemoe.sora.lsp.editor.LspProject;
-import io.github.rosemoe.sora.text.ContentIO;
-import io.github.rosemoe.sora.widget.component.EditorAutoCompletion;
+import io.github.abc15018045126.sora.app.BaseEditorActivity;
+import io.github.abc15018045126.sora.app.R;
+import io.github.abc15018045126.sora.langs.textmate.TextMateColorScheme;
+import io.github.abc15018045126.sora.langs.textmate.TextMateLanguage;
+import io.github.abc15018045126.sora.langs.textmate.registry.FileProviderRegistry;
+import io.github.abc15018045126.sora.langs.textmate.registry.GrammarRegistry;
+import io.github.abc15018045126.sora.langs.textmate.registry.ThemeRegistry;
+import io.github.abc15018045126.sora.langs.textmate.registry.dsl.LanguageDefinitionListBuilder;
+import io.github.abc15018045126.sora.langs.textmate.registry.model.ThemeModel;
+import io.github.abc15018045126.sora.langs.textmate.registry.provider.AssetsFileResolver;
+import io.github.abc15018045126.sora.lsp.client.connection.LocalSocketStreamConnectionProvider;
+import io.github.abc15018045126.sora.lsp.client.languageserver.serverdefinition.CustomLanguageServerDefinition;
+import io.github.abc15018045126.sora.lsp.client.languageserver.wrapper.EventHandler;
+import io.github.abc15018045126.sora.lsp.editor.LspEditor;
+import io.github.abc15018045126.sora.lsp.editor.LspProject;
+import io.github.abc15018045126.sora.text.ContentIO;
+import io.github.abc15018045126.sora.widget.component.EditorAutoCompletion;
 import kotlin.Unit;
 
 public class LspTestJavaActivity extends BaseEditorActivity {
@@ -397,5 +397,6 @@ public class LspTestJavaActivity extends BaseEditorActivity {
         }
     }
 }
+
 
 

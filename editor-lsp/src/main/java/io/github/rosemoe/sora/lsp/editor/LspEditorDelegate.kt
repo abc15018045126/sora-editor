@@ -1,10 +1,10 @@
-package io.github.rosemoe.sora.lsp.editor
+package io.github.abc15018045126.sora.lsp.editor
 
 import androidx.annotation.WorkerThread
-import io.github.rosemoe.sora.lsp.client.languageserver.ServerStatus
-import io.github.rosemoe.sora.lsp.client.languageserver.requestmanager.AggregatedRequestManager
-import io.github.rosemoe.sora.lsp.client.languageserver.serverdefinition.LanguageServerDefinition
-import io.github.rosemoe.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
+import io.github.abc15018045126.sora.lsp.client.languageserver.ServerStatus
+import io.github.abc15018045126.sora.lsp.client.languageserver.requestmanager.AggregatedRequestManager
+import io.github.abc15018045126.sora.lsp.client.languageserver.serverdefinition.LanguageServerDefinition
+import io.github.abc15018045126.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
 import org.eclipse.lsp4j.ServerCapabilities
 
 internal class LspEditorDelegate(private val editor: LspEditor) {

@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2023  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2023  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,26 +18,26 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.editor.event
+package io.github.abc15018045126.sora.lsp.editor.event
 
-import io.github.rosemoe.sora.event.ContentChangeEvent
-import io.github.rosemoe.sora.event.EventReceiver
-import io.github.rosemoe.sora.event.Unsubscribe
-import io.github.rosemoe.sora.lsp.editor.LspEditor
-import io.github.rosemoe.sora.lsp.editor.requestDocumentColor
-import io.github.rosemoe.sora.lsp.editor.requestInlayHint
-import io.github.rosemoe.sora.lsp.events.EventType
-import io.github.rosemoe.sora.lsp.events.diagnostics.queryDocumentDiagnostics
-import io.github.rosemoe.sora.lsp.events.document.documentChange
-import io.github.rosemoe.sora.lsp.events.highlight.DocumentHighlightEvent
-import io.github.rosemoe.sora.lsp.events.highlight.documentHighlight
-import io.github.rosemoe.sora.lsp.events.hover.hover
-import io.github.rosemoe.sora.lsp.events.inlayhint.inlayHint
-import io.github.rosemoe.sora.lsp.events.signature.signatureHelp
+import io.github.abc15018045126.sora.event.ContentChangeEvent
+import io.github.abc15018045126.sora.event.EventReceiver
+import io.github.abc15018045126.sora.event.Unsubscribe
+import io.github.abc15018045126.sora.lsp.editor.LspEditor
+import io.github.abc15018045126.sora.lsp.editor.requestDocumentColor
+import io.github.abc15018045126.sora.lsp.editor.requestInlayHint
+import io.github.abc15018045126.sora.lsp.events.EventType
+import io.github.abc15018045126.sora.lsp.events.diagnostics.queryDocumentDiagnostics
+import io.github.abc15018045126.sora.lsp.events.document.documentChange
+import io.github.abc15018045126.sora.lsp.events.highlight.DocumentHighlightEvent
+import io.github.abc15018045126.sora.lsp.events.highlight.documentHighlight
+import io.github.abc15018045126.sora.lsp.events.hover.hover
+import io.github.abc15018045126.sora.lsp.events.inlayhint.inlayHint
+import io.github.abc15018045126.sora.lsp.events.signature.signatureHelp
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import org.eclipse.lsp4j.DocumentDiagnosticReport
@@ -101,4 +101,5 @@ class LspEditorContentChangeEvent(private val editor: LspEditor) :
 
     }
 }
+
 

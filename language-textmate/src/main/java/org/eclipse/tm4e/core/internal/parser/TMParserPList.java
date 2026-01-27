@@ -33,7 +33,7 @@ import java.util.Map;
 
 import javax.xml.parsers.SAXParserFactory;
 
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.util.Logger;
 
 public final class TMParserPList implements TMParser {
 

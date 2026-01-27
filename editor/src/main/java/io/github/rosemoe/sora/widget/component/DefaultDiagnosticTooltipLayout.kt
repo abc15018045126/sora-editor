@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.widget.component
+package io.github.abc15018045126.sora.widget.component
 
 import android.graphics.drawable.GradientDrawable
 import android.view.LayoutInflater
@@ -8,10 +8,10 @@ import android.view.View.MeasureSpec
 import android.view.ViewGroup
 import android.widget.PopupMenu
 import android.widget.TextView
-import io.github.rosemoe.sora.I18nConfig
-import io.github.rosemoe.sora.R
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticDetail
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.I18nConfig
+import io.github.abc15018045126.sora.R
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticDetail
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 import kotlin.math.max
 
 class DefaultDiagnosticTooltipLayout : DiagnosticTooltipLayout {

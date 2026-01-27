@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2023  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2023  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,36 +18,36 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.editor
+package io.github.abc15018045126.sora.lsp.editor
 
-import io.github.rosemoe.sora.lsp.client.languageserver.serverdefinition.LanguageServerDefinition
-import io.github.rosemoe.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
-import io.github.rosemoe.sora.lsp.editor.diagnostics.DiagnosticsContainer
-import io.github.rosemoe.sora.lsp.events.EventEmitter
-import io.github.rosemoe.sora.lsp.events.code.CodeActionEventEvent
-import io.github.rosemoe.sora.lsp.events.color.DocumentColorEvent
-import io.github.rosemoe.sora.lsp.events.completion.CompletionEvent
-import io.github.rosemoe.sora.lsp.events.diagnostics.PublishDiagnosticsEvent
-import io.github.rosemoe.sora.lsp.events.diagnostics.QueryDocumentDiagnosticsEvent
-import io.github.rosemoe.sora.lsp.events.document.ApplyEditsEvent
-import io.github.rosemoe.sora.lsp.events.document.DocumentChangeEvent
-import io.github.rosemoe.sora.lsp.events.document.DocumentCloseEvent
-import io.github.rosemoe.sora.lsp.events.document.DocumentOpenEvent
-import io.github.rosemoe.sora.lsp.events.document.DocumentSaveEvent
-import io.github.rosemoe.sora.lsp.events.format.FullFormattingEvent
-import io.github.rosemoe.sora.lsp.events.format.RangeFormattingEvent
-import io.github.rosemoe.sora.lsp.events.highlight.DocumentHighlightEvent
-import io.github.rosemoe.sora.lsp.events.hover.HoverEvent
-import io.github.rosemoe.sora.lsp.events.inlayhint.InlayHintEvent
-import io.github.rosemoe.sora.lsp.events.signature.SignatureHelpEvent
-import io.github.rosemoe.sora.lsp.events.workspace.WorkSpaceApplyEditEvent
-import io.github.rosemoe.sora.lsp.events.workspace.WorkSpaceExecuteCommand
-import io.github.rosemoe.sora.lsp.utils.FileUri
-import io.github.rosemoe.sora.lsp.utils.toFileUri
+import io.github.abc15018045126.sora.lsp.client.languageserver.serverdefinition.LanguageServerDefinition
+import io.github.abc15018045126.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
+import io.github.abc15018045126.sora.lsp.editor.diagnostics.DiagnosticsContainer
+import io.github.abc15018045126.sora.lsp.events.EventEmitter
+import io.github.abc15018045126.sora.lsp.events.code.CodeActionEventEvent
+import io.github.abc15018045126.sora.lsp.events.color.DocumentColorEvent
+import io.github.abc15018045126.sora.lsp.events.completion.CompletionEvent
+import io.github.abc15018045126.sora.lsp.events.diagnostics.PublishDiagnosticsEvent
+import io.github.abc15018045126.sora.lsp.events.diagnostics.QueryDocumentDiagnosticsEvent
+import io.github.abc15018045126.sora.lsp.events.document.ApplyEditsEvent
+import io.github.abc15018045126.sora.lsp.events.document.DocumentChangeEvent
+import io.github.abc15018045126.sora.lsp.events.document.DocumentCloseEvent
+import io.github.abc15018045126.sora.lsp.events.document.DocumentOpenEvent
+import io.github.abc15018045126.sora.lsp.events.document.DocumentSaveEvent
+import io.github.abc15018045126.sora.lsp.events.format.FullFormattingEvent
+import io.github.abc15018045126.sora.lsp.events.format.RangeFormattingEvent
+import io.github.abc15018045126.sora.lsp.events.highlight.DocumentHighlightEvent
+import io.github.abc15018045126.sora.lsp.events.hover.HoverEvent
+import io.github.abc15018045126.sora.lsp.events.inlayhint.InlayHintEvent
+import io.github.abc15018045126.sora.lsp.events.signature.SignatureHelpEvent
+import io.github.abc15018045126.sora.lsp.events.workspace.WorkSpaceApplyEditEvent
+import io.github.abc15018045126.sora.lsp.events.workspace.WorkSpaceExecuteCommand
+import io.github.abc15018045126.sora.lsp.utils.FileUri
+import io.github.abc15018045126.sora.lsp.utils.toFileUri
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.asCoroutineDispatcher
@@ -202,3 +202,4 @@ class LspProject(
         editors.remove(editor.uri)
     }
 }
+

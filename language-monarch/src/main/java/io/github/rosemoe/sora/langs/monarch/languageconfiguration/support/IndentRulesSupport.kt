@@ -12,10 +12,10 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.languageconfiguration.support
+package io.github.abc15018045126.sora.langs.monarch.languageconfiguration.support
 
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentationRule
-import io.github.rosemoe.sora.langs.monarch.utils.matchesFully
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentationRule
+import io.github.abc15018045126.sora.langs.monarch.utils.matchesFully
 
 class IndentRulesSupport(
     private val indentationRules: IndentationRule

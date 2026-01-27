@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,11 +18,11 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch
+package io.github.abc15018045126.sora.langs.monarch
 
 import android.graphics.Color
 import android.os.Bundle
@@ -33,28 +33,28 @@ import io.github.dingyi222666.monarch.types.StandardTokenType
 import io.github.dingyi222666.regex.GlobalRegexLib
 import io.github.dingyi222666.regex.MatchResult
 import io.github.dingyi222666.regex.Regex
-import io.github.rosemoe.sora.lang.analysis.AsyncIncrementalAnalyzeManager
-import io.github.rosemoe.sora.lang.analysis.IncrementalAnalyzeManager.LineTokenizeResult
-import io.github.rosemoe.sora.lang.brackets.BracketsProvider
-import io.github.rosemoe.sora.lang.brackets.OnlineBracketsMatcher
-import io.github.rosemoe.sora.lang.completion.IdentifierAutoComplete.SyncIdentifiers
-import io.github.rosemoe.sora.lang.styling.CodeBlock
-import io.github.rosemoe.sora.lang.styling.Span
-import io.github.rosemoe.sora.lang.styling.SpanFactory
-import io.github.rosemoe.sora.lang.styling.TextStyle
-import io.github.rosemoe.sora.langs.monarch.folding.FoldingHelper
-import io.github.rosemoe.sora.langs.monarch.folding.IndentRange
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.LanguageConfiguration
-import io.github.rosemoe.sora.langs.monarch.registry.ThemeChangeListener
-import io.github.rosemoe.sora.langs.monarch.registry.ThemeRegistry
-import io.github.rosemoe.sora.langs.monarch.registry.model.ThemeModel
-import io.github.rosemoe.sora.langs.monarch.utils.checkSurrogate
-import io.github.rosemoe.sora.langs.monarch.utils.convertUnicodeOffsetToUtf16
-import io.github.rosemoe.sora.text.Content
-import io.github.rosemoe.sora.text.ContentLine
-import io.github.rosemoe.sora.text.ContentReference
-import io.github.rosemoe.sora.util.MyCharacter
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lang.analysis.AsyncIncrementalAnalyzeManager
+import io.github.abc15018045126.sora.lang.analysis.IncrementalAnalyzeManager.LineTokenizeResult
+import io.github.abc15018045126.sora.lang.brackets.BracketsProvider
+import io.github.abc15018045126.sora.lang.brackets.OnlineBracketsMatcher
+import io.github.abc15018045126.sora.lang.completion.IdentifierAutoComplete.SyncIdentifiers
+import io.github.abc15018045126.sora.lang.styling.CodeBlock
+import io.github.abc15018045126.sora.lang.styling.Span
+import io.github.abc15018045126.sora.lang.styling.SpanFactory
+import io.github.abc15018045126.sora.lang.styling.TextStyle
+import io.github.abc15018045126.sora.langs.monarch.folding.FoldingHelper
+import io.github.abc15018045126.sora.langs.monarch.folding.IndentRange
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.LanguageConfiguration
+import io.github.abc15018045126.sora.langs.monarch.registry.ThemeChangeListener
+import io.github.abc15018045126.sora.langs.monarch.registry.ThemeRegistry
+import io.github.abc15018045126.sora.langs.monarch.registry.model.ThemeModel
+import io.github.abc15018045126.sora.langs.monarch.utils.checkSurrogate
+import io.github.abc15018045126.sora.langs.monarch.utils.convertUnicodeOffsetToUtf16
+import io.github.abc15018045126.sora.text.Content
+import io.github.abc15018045126.sora.text.ContentLine
+import io.github.abc15018045126.sora.text.ContentReference
+import io.github.abc15018045126.sora.util.MyCharacter
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 
 class MonarchAnalyzer(
     private val language: MonarchLanguage,
@@ -338,3 +338,4 @@ class MonarchAnalyzer(
     }
 
 }
+

@@ -2,10 +2,10 @@
 
 ![Banner](/images/editor_banner.jpg)
 ----
-[![CI](https://github.com/Rosemoe/CodeEditor/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/Rosemoe/CodeEditor/actions/workflows/gradle.yml)
-[![GitHub license](https://img.shields.io/github/license/Rosemoe/CodeEditor)](https://github.com/Rosemoe/CodeEditor/blob/main/LICENSE)
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.rosemoe/editor.svg?label=Maven%20Central)]((https://search.maven.org/search?q=io.github.rosemoe%20editor))   
-[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/rosemoe_code_editor)
+[![CI](https://github.com/abc15018045126/sora-editor/actions/workflows/gradle.yml/badge.svg?event=push)](https://github.com/abc15018045126/sora-editor/actions/workflows/gradle.yml)
+[![GitHub license](https://img.shields.io/github/license/abc15018045126/sora-editor)](https://github.com/abc15018045126/sora-editor/blob/main/LICENSE)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.abc15018045126/editor.svg?label=Maven%20Central)]((https://search.maven.org/search?q=io.github.abc15018045126%20editor))   
+[![Telegram](https://img.shields.io/badge/Join-Telegram-blue)](https://t.me/abc15018045126_code_editor)
 [![QQ](https://img.shields.io/badge/Join-QQ_Group-ff69b4)](https://jq.qq.com/?_wv=1027&k=n68uxQws)
 
 sora-editor es un increíble editor de código optimizado para Android
@@ -17,7 +17,7 @@ Lea esto en otros idiomas: [English](README.md), [简体中文](README.zh-cn.md)
 ***Trabajo en Progreso***
 
 Este proyecto todavía se está desarrollando lentamente.
-Descarga las versiones más recientes desde [Releases](https://github.com/Rosemoe/CodeEditor/releases)
+Descarga las versiones más recientes desde [Releases](https://github.com/abc15018045126/sora-editor/releases)
 en lugar de clonar este repositorio directamente.
 **Los problemas y las solicitudes de extracción son bienvenidos.**
 
@@ -44,7 +44,7 @@ Cuando trabaje con un teclado físico, puede usar combinaciones de teclas para r
 comportamiento.
 El editor proporciona compatibilidad con algunas combinaciones de teclas de forma predeterminada.
 Sin embargo, puedes echarle un vistazo
-a [`KeyBindingEvent`](https://github.com/Rosemoe/sora-editor/blob/main/editor/src/main/java/io/github/rosemoe/sora/event/KeyBindingEvent.java)
+a [`KeyBindingEvent`](https://github.com/abc15018045126/sora-editor/blob/main/editor/src/main/java/io/github/abc15018045126/sora/event/KeyBindingEvent.java)
 y agregar tus propias combinaciones de teclas. Incluso puede anular los enlaces de teclas predeterminados y realizar acciones personalizadas que usted necesite.
 
 Las combinaciones de teclas admitidas actualmente son en su mayoría similares a Android Studio/Intellij IDEA.
@@ -63,8 +63,8 @@ Agregue las dependencias en su aplicación:
 
 ```Gradle
 dependencies {
-    implementation(platform("io.github.Rosemoe:editor-bom:<versionName>"))
-    implementation("io.github.Rosemoe:<moduleName>")
+    implementation(platform("io.github.abc15018045126:editor-bom:<versionName>"))
+    implementation("io.github.abc15018045126:<moduleName>")
 }
 ```
 
@@ -82,25 +82,25 @@ Una implementación simple para el resaltado de Java y el autocompletado de iden
 **- language-textmate**
 Un resaltador avanzado para el editor. Puede encontrar paquetes y temas de idiomas para compañeros de texto y cargar ellos usando este módulo. La implementación interna de textmate es de [tm4e](https://github.com/eclipse/tm4e).
 
-Compruebe la versión más reciente ingresando a [Releases](https://github.com/Rosemoe/CodeEditor/releases).
+Compruebe la versión más reciente ingresando a [Releases](https://github.com/abc15018045126/sora-editor/releases).
 
 ## Comunidad
 
 * [Grupo Oficial de QQ](https://qm.qq.com/q/kKBqRsVrQ4)
-* [Grupo Oficial de Telegram](https://t.me/rosemoe_code_editor)
+* [Grupo Oficial de Telegram](https://t.me/abc15018045126_code_editor)
 
 ## Colaboradores
 
-<a href="https://github.com/Rosemoe/sora-editor/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Rosemoe/sora-editor" />
+<a href="https://github.com/abc15018045126/sora-editor/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=abc15018045126/sora-editor" />
 </a>
 
 ## Licencias
 
 ```
 sora-editor - the awesome code editor for Android
-https://github.com/Rosemoe/sora-editor
-Copyright (C) 2020-2026  Rosemoe
+https://github.com/abc15018045126/sora-editor
+Copyright (C) 2020-2026  abc15018045126
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
@@ -117,7 +117,7 @@ License along with this library; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
 USA
 
-Please contact Rosemoe by email 2073412493@qq.com if you need
+Please contact abc15018045126 by email 2073412493@qq.com if you need
 additional information or have any questions
 ```
 
@@ -126,3 +126,5 @@ additional information or have any questions
 Gracias a [JetBrains](https://www.jetbrains.com/?from=CodeEditor) por brindar licencia de código abierto gratuito
  para IDE como [IntelliJ IDEA](https://www.jetbrains.com/idea/?from=CodeEditor).   
 [<img src=".github/jetbrains-variant-3.png" width="200"/>](https://www.jetbrains.com/?from=CodeEditor)
+
+

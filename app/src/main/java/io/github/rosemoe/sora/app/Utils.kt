@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,11 +18,11 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.app
+package io.github.abc15018045126.sora.app
 
 import android.app.Activity
 import android.content.Context
@@ -33,19 +33,19 @@ import android.os.Build.VERSION.SDK_INT
 import android.view.View
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import io.github.rosemoe.sora.langs.monarch.MonarchColorScheme
-import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme
-import io.github.rosemoe.sora.langs.textmate.registry.ThemeRegistry
-import io.github.rosemoe.sora.widget.CodeEditor
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
-import io.github.rosemoe.sora.widget.schemes.SchemeDarcula
+import io.github.abc15018045126.sora.langs.monarch.MonarchColorScheme
+import io.github.abc15018045126.sora.langs.textmate.TextMateColorScheme
+import io.github.abc15018045126.sora.langs.textmate.registry.ThemeRegistry
+import io.github.abc15018045126.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.widget.schemes.SchemeDarcula
 
 fun switchThemeIfRequired(context: Context, editor: CodeEditor) {
     if ((context.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES) {
         if (editor.colorScheme is TextMateColorScheme) {
             ThemeRegistry.getInstance().setTheme("darcula")
         } else if (editor.colorScheme is MonarchColorScheme) {
-            io.github.rosemoe.sora.langs.monarch.registry.ThemeRegistry.setTheme("darcula")
+            io.github.abc15018045126.sora.langs.monarch.registry.ThemeRegistry.setTheme("darcula")
         } else {
             editor.colorScheme = SchemeDarcula()
         }
@@ -53,7 +53,7 @@ fun switchThemeIfRequired(context: Context, editor: CodeEditor) {
         if (editor.colorScheme is TextMateColorScheme) {
             ThemeRegistry.getInstance().setTheme("quietlight")
         } else if (editor.colorScheme is MonarchColorScheme) {
-            io.github.rosemoe.sora.langs.monarch.registry.ThemeRegistry.setTheme("quietlight")
+            io.github.abc15018045126.sora.langs.monarch.registry.ThemeRegistry.setTheme("quietlight")
         } else {
             editor.colorScheme = EditorColorScheme()
         }
@@ -79,3 +79,4 @@ fun applyEdgeToEdgeForViews(paddingView: View, rootView: View) {
         }
     }
 }
+

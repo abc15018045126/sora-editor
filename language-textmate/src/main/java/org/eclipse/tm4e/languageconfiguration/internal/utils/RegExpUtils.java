@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 import org.eclipse.jdt.annotation.Nullable;
 
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.util.Logger;
 
 /**
  * Regex utilities.

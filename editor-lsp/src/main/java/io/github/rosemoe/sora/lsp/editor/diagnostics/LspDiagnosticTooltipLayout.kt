@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.lsp.editor.diagnostics
+package io.github.abc15018045126.sora.lsp.editor.diagnostics
 
 import android.content.ClipData
 import android.content.ClipboardManager
@@ -15,14 +15,14 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.annotation.ColorInt
-import io.github.rosemoe.sora.lsp.R
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticDetail
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticRegion
-import io.github.rosemoe.sora.lsp.editor.curvedTextScale
-import io.github.rosemoe.sora.lsp.utils.blendARGB
-import io.github.rosemoe.sora.widget.component.DiagnosticTooltipLayout
-import io.github.rosemoe.sora.widget.component.EditorDiagnosticTooltipWindow
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lsp.R
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticDetail
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticRegion
+import io.github.abc15018045126.sora.lsp.editor.curvedTextScale
+import io.github.abc15018045126.sora.lsp.utils.blendARGB
+import io.github.abc15018045126.sora.widget.component.DiagnosticTooltipLayout
+import io.github.abc15018045126.sora.widget.component.EditorDiagnosticTooltipWindow
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 import kotlin.math.abs
 
 /**

@@ -36,7 +36,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.util.Logger;
 
 /**
  * The registry that will hold all grammars.

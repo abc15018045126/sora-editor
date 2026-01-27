@@ -20,7 +20,7 @@ import org.eclipse.tm4e.core.internal.oniguruma.OnigString;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import io.github.rosemoe.oniguruma.OnigNative;
+import io.github.abc15018045126.oniguruma.OnigNative;
 
 class NativeOnigSearcher {
 

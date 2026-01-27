@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,31 +18,31 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch
+package io.github.abc15018045126.sora.langs.monarch
 
-import io.github.rosemoe.sora.lang.smartEnter.NewlineHandleResult
-import io.github.rosemoe.sora.lang.smartEnter.NewlineHandler
-import io.github.rosemoe.sora.lang.styling.Styles
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.CompleteEnterAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.EnterAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction.Indent
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction.IndentOutdent
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction.None
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction.Outdent
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.support.IndentRulesSupport
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.support.OnEnterSupport
-import io.github.rosemoe.sora.langs.monarch.utils.getIndentationFromWhitespace
-import io.github.rosemoe.sora.langs.monarch.utils.getLeadingWhitespace
-import io.github.rosemoe.sora.langs.monarch.utils.getLinePrefixingWhitespaceAtPosition
-import io.github.rosemoe.sora.langs.monarch.utils.normalizeIndentation
-import io.github.rosemoe.sora.langs.monarch.utils.outdentString
-import io.github.rosemoe.sora.text.CharPosition
-import io.github.rosemoe.sora.text.Content
+import io.github.abc15018045126.sora.lang.smartEnter.NewlineHandleResult
+import io.github.abc15018045126.sora.lang.smartEnter.NewlineHandler
+import io.github.abc15018045126.sora.lang.styling.Styles
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.CompleteEnterAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.EnterAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction.Indent
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction.IndentOutdent
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction.None
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction.Outdent
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.support.IndentRulesSupport
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.support.OnEnterSupport
+import io.github.abc15018045126.sora.langs.monarch.utils.getIndentationFromWhitespace
+import io.github.abc15018045126.sora.langs.monarch.utils.getLeadingWhitespace
+import io.github.abc15018045126.sora.langs.monarch.utils.getLinePrefixingWhitespaceAtPosition
+import io.github.abc15018045126.sora.langs.monarch.utils.normalizeIndentation
+import io.github.abc15018045126.sora.langs.monarch.utils.outdentString
+import io.github.abc15018045126.sora.text.CharPosition
+import io.github.abc15018045126.sora.text.Content
 import kotlin.math.max
 
 

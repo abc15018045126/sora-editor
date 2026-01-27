@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.lsp.editor.codeaction
+package io.github.abc15018045126.sora.lsp.editor.codeaction
 
 import org.eclipse.lsp4j.CodeAction
 import org.eclipse.lsp4j.Command

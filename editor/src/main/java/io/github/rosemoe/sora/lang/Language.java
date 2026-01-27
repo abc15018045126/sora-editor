@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,26 +18,26 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.lang;
+package io.github.abc15018045126.sora.lang;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.UiThread;
 import androidx.annotation.WorkerThread;
-import io.github.rosemoe.sora.lang.analysis.AnalyzeManager;
-import io.github.rosemoe.sora.lang.completion.CompletionCancelledException;
-import io.github.rosemoe.sora.lang.completion.CompletionHelper;
-import io.github.rosemoe.sora.lang.completion.CompletionPublisher;
-import io.github.rosemoe.sora.lang.format.Formatter;
-import io.github.rosemoe.sora.lang.smartEnter.NewlineHandler;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.ContentReference;
-import io.github.rosemoe.sora.widget.CodeEditor;
-import io.github.rosemoe.sora.widget.SymbolPairMatch;
+import io.github.abc15018045126.sora.lang.analysis.AnalyzeManager;
+import io.github.abc15018045126.sora.lang.completion.CompletionCancelledException;
+import io.github.abc15018045126.sora.lang.completion.CompletionHelper;
+import io.github.abc15018045126.sora.lang.completion.CompletionPublisher;
+import io.github.abc15018045126.sora.lang.format.Formatter;
+import io.github.abc15018045126.sora.lang.smartEnter.NewlineHandler;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.ContentReference;
+import io.github.abc15018045126.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.widget.SymbolPairMatch;
 
 /**
  * Language for editor
@@ -50,7 +50,7 @@ import io.github.rosemoe.sora.widget.SymbolPairMatch;
  * It means that you should not give one language object to other editor instances
  * after it has been applied to one editor.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public interface Language {
 
@@ -102,7 +102,7 @@ public interface Language {
      * @param position       The position for auto-complete
      * @param publisher      The publisher used to update items
      * @param extraArguments Arguments set by {@link CodeEditor#setText(CharSequence, Bundle)}
-     * @throws io.github.rosemoe.sora.lang.completion.CompletionCancelledException This thread can be abandoned
+     * @throws io.github.abc15018045126.sora.lang.completion.CompletionCancelledException This thread can be abandoned
      *                                                                             by the editor framework because the auto-completion items of
      *                                                                             this invocation are no longer needed by the user. This can either be thrown
      *                                                                             by {@link ContentReference} or {@link CompletionPublisher}.
@@ -212,3 +212,4 @@ public interface Language {
     void destroy();
 
 }
+

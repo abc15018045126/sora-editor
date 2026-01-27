@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,24 +18,24 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.event;
+package io.github.abc15018045126.sora.event;
 
 import android.view.KeyEvent;
 
 import androidx.annotation.NonNull;
 
-import io.github.rosemoe.sora.text.method.KeyMetaStates;
-import io.github.rosemoe.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.text.method.KeyMetaStates;
+import io.github.abc15018045126.sora.widget.CodeEditor;
 
 /**
  * Receives key related events in editor.
  * <p>
  * You may set a boolean for editor to return to the Android KeyEvent framework.
  *
- * @author Rosemoe
+ * @author abc15018045126
  * @see ResultedEvent#setResult(Object)
  * <p>
  * This class mirrors methods of {@link KeyEvent}, but some methods are changed:
@@ -154,3 +154,4 @@ public class EditorKeyEvent extends ResultedEvent<Boolean> {
         MULTIPLE
     }
 }
+

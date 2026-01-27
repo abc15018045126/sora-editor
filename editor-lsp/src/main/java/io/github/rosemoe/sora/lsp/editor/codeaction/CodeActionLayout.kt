@@ -1,9 +1,9 @@
-package io.github.rosemoe.sora.lsp.editor.codeaction
+package io.github.abc15018045126.sora.lsp.editor.codeaction
 
 import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 
 interface CodeActionLayout {
     /** Bind this layout to its hosting window. */

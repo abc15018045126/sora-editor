@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.lang.completion;
+package io.github.abc15018045126.sora.lang.completion;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -40,11 +40,11 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import io.github.rosemoe.sora.lang.Language;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.ContentReference;
-import io.github.rosemoe.sora.text.TextUtils;
-import io.github.rosemoe.sora.util.MutableInt;
+import io.github.abc15018045126.sora.lang.Language;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.ContentReference;
+import io.github.abc15018045126.sora.text.TextUtils;
+import io.github.abc15018045126.sora.util.MutableInt;
 
 
 /**
@@ -55,7 +55,7 @@ import io.github.rosemoe.sora.util.MutableInt;
  * with null first. Otherwise, your completion list may be corrupted. And in that case, you must do the sorting
  * work by yourself and then add your items.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class IdentifierAutoComplete {
 
@@ -199,7 +199,7 @@ public class IdentifierAutoComplete {
     /**
      * Interface for saving identifiers
      *
-     * @author Rosemoe
+     * @author abc15018045126
      * @see IdentifierAutoComplete.DisposableIdentifiers
      */
     public interface Identifiers {
@@ -221,7 +221,7 @@ public class IdentifierAutoComplete {
      * In this case, the frequent allocation of memory is unavoidable.
      * And also, this class is not thread-safe.
      *
-     * @author Rosemoe
+     * @author abc15018045126
      */
     public static class DisposableIdentifiers implements Identifiers {
 
@@ -356,3 +356,4 @@ public class IdentifierAutoComplete {
 
 
 }
+

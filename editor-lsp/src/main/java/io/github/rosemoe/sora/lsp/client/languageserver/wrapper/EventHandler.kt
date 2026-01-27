@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2023  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2023  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,14 +18,14 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.client.languageserver.wrapper
+package io.github.abc15018045126.sora.lsp.client.languageserver.wrapper
 
-import io.github.rosemoe.sora.lsp.client.languageserver.ServerInitializeListener
-import io.github.rosemoe.sora.lsp.client.languageserver.ServerStatus
+import io.github.abc15018045126.sora.lsp.client.languageserver.ServerInitializeListener
+import io.github.abc15018045126.sora.lsp.client.languageserver.ServerStatus
 import org.eclipse.lsp4j.InitializeResult
 import org.eclipse.lsp4j.MessageParams
 import org.eclipse.lsp4j.jsonrpc.MessageConsumer
@@ -73,4 +73,5 @@ class EventHandler internal constructor(
         }
     }
 }
+
 

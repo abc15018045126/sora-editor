@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget;
+package io.github.abc15018045126.sora.widget;
 
 import android.util.Log;
 import android.view.KeyCharacterMap;
@@ -32,14 +32,14 @@ import androidx.annotation.Nullable;
 
 import java.util.Objects;
 
-import io.github.rosemoe.sora.event.EditorKeyEvent;
-import io.github.rosemoe.sora.event.InterceptTarget;
-import io.github.rosemoe.sora.event.KeyBindingEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.lang.smartEnter.NewlineHandler;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.Cursor;
-import io.github.rosemoe.sora.text.method.KeyMetaStates;
+import io.github.abc15018045126.sora.event.EditorKeyEvent;
+import io.github.abc15018045126.sora.event.InterceptTarget;
+import io.github.abc15018045126.sora.event.KeyBindingEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.lang.smartEnter.NewlineHandler;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.Cursor;
+import io.github.abc15018045126.sora.text.method.KeyMetaStates;
 
 /**
  * Handles {@link KeyEvent}s in editor.
@@ -643,3 +643,4 @@ public class EditorKeyEventHandler {
         return e.result(this.editor.onSuperKeyMultiple(keyCode, repeatCount, event));
     }
 }
+

@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,15 +18,15 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget;
+package io.github.abc15018045126.sora.widget;
 
-import static io.github.rosemoe.sora.util.Numbers.stringSize;
-import static io.github.rosemoe.sora.widget.DirectAccessProps.CURSOR_LINE_BG_OVERLAP_CURSOR;
-import static io.github.rosemoe.sora.widget.DirectAccessProps.CURSOR_LINE_BG_OVERLAP_CUSTOM;
-import static io.github.rosemoe.sora.widget.DirectAccessProps.CURSOR_LINE_BG_OVERLAP_MIXED;
+import static io.github.abc15018045126.sora.util.Numbers.stringSize;
+import static io.github.abc15018045126.sora.widget.DirectAccessProps.CURSOR_LINE_BG_OVERLAP_CURSOR;
+import static io.github.abc15018045126.sora.widget.DirectAccessProps.CURSOR_LINE_BG_OVERLAP_CUSTOM;
+import static io.github.abc15018045126.sora.widget.DirectAccessProps.CURSOR_LINE_BG_OVERLAP_MIXED;
 
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -55,48 +55,48 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-import io.github.rosemoe.sora.R;
-import io.github.rosemoe.sora.annotations.UnsupportedUserUsage;
-import io.github.rosemoe.sora.graphics.BubbleHelper;
-import io.github.rosemoe.sora.graphics.BufferedDrawPoints;
-import io.github.rosemoe.sora.graphics.GraphicsCompat;
-import io.github.rosemoe.sora.graphics.Paint;
-import io.github.rosemoe.sora.graphics.TextRow;
-import io.github.rosemoe.sora.graphics.TextRowParams;
-import io.github.rosemoe.sora.lang.completion.snippet.SnippetItem;
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticRegion;
-import io.github.rosemoe.sora.lang.styling.CodeBlock;
-import io.github.rosemoe.sora.lang.styling.EmptyReader;
-import io.github.rosemoe.sora.lang.styling.Span;
-import io.github.rosemoe.sora.lang.styling.Spans;
-import io.github.rosemoe.sora.lang.styling.Styles;
-import io.github.rosemoe.sora.lang.styling.TextStyle;
-import io.github.rosemoe.sora.lang.styling.color.ResolvableColor;
-import io.github.rosemoe.sora.lang.styling.inlayHint.InlayHint;
-import io.github.rosemoe.sora.lang.styling.line.LineAnchorStyle;
-import io.github.rosemoe.sora.lang.styling.line.LineBackground;
-import io.github.rosemoe.sora.lang.styling.line.LineGutterBackground;
-import io.github.rosemoe.sora.lang.styling.line.LineSideIcon;
-import io.github.rosemoe.sora.lang.styling.line.LineStyles;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.ContentLine;
-import io.github.rosemoe.sora.text.Cursor;
-import io.github.rosemoe.sora.text.bidi.Directions;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.util.LongArrayList;
-import io.github.rosemoe.sora.util.MutableInt;
-import io.github.rosemoe.sora.util.Numbers;
-import io.github.rosemoe.sora.util.TemporaryCharBuffer;
-import io.github.rosemoe.sora.widget.layout.Row;
-import io.github.rosemoe.sora.widget.layout.RowIterator;
-import io.github.rosemoe.sora.widget.rendering.RenderingConstants;
-import io.github.rosemoe.sora.widget.rendering.TextAdvancesCache;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
-import io.github.rosemoe.sora.widget.style.DiagnosticIndicatorStyle;
-import io.github.rosemoe.sora.widget.style.LineInfoPanelPosition;
-import io.github.rosemoe.sora.widget.style.LineInfoPanelPositionMode;
-import io.github.rosemoe.sora.widget.style.SelectionHandleStyle;
+import io.github.abc15018045126.sora.R;
+import io.github.abc15018045126.sora.annotations.UnsupportedUserUsage;
+import io.github.abc15018045126.sora.graphics.BubbleHelper;
+import io.github.abc15018045126.sora.graphics.BufferedDrawPoints;
+import io.github.abc15018045126.sora.graphics.GraphicsCompat;
+import io.github.abc15018045126.sora.graphics.Paint;
+import io.github.abc15018045126.sora.graphics.TextRow;
+import io.github.abc15018045126.sora.graphics.TextRowParams;
+import io.github.abc15018045126.sora.lang.completion.snippet.SnippetItem;
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticRegion;
+import io.github.abc15018045126.sora.lang.styling.CodeBlock;
+import io.github.abc15018045126.sora.lang.styling.EmptyReader;
+import io.github.abc15018045126.sora.lang.styling.Span;
+import io.github.abc15018045126.sora.lang.styling.Spans;
+import io.github.abc15018045126.sora.lang.styling.Styles;
+import io.github.abc15018045126.sora.lang.styling.TextStyle;
+import io.github.abc15018045126.sora.lang.styling.color.ResolvableColor;
+import io.github.abc15018045126.sora.lang.styling.inlayHint.InlayHint;
+import io.github.abc15018045126.sora.lang.styling.line.LineAnchorStyle;
+import io.github.abc15018045126.sora.lang.styling.line.LineBackground;
+import io.github.abc15018045126.sora.lang.styling.line.LineGutterBackground;
+import io.github.abc15018045126.sora.lang.styling.line.LineSideIcon;
+import io.github.abc15018045126.sora.lang.styling.line.LineStyles;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.ContentLine;
+import io.github.abc15018045126.sora.text.Cursor;
+import io.github.abc15018045126.sora.text.bidi.Directions;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.util.LongArrayList;
+import io.github.abc15018045126.sora.util.MutableInt;
+import io.github.abc15018045126.sora.util.Numbers;
+import io.github.abc15018045126.sora.util.TemporaryCharBuffer;
+import io.github.abc15018045126.sora.widget.layout.Row;
+import io.github.abc15018045126.sora.widget.layout.RowIterator;
+import io.github.abc15018045126.sora.widget.rendering.RenderingConstants;
+import io.github.abc15018045126.sora.widget.rendering.TextAdvancesCache;
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme;
+import io.github.abc15018045126.sora.widget.style.DiagnosticIndicatorStyle;
+import io.github.abc15018045126.sora.widget.style.LineInfoPanelPosition;
+import io.github.abc15018045126.sora.widget.style.LineInfoPanelPositionMode;
+import io.github.abc15018045126.sora.widget.style.SelectionHandleStyle;
 
 public class EditorRenderer {
 
@@ -2617,3 +2617,4 @@ public class EditorRenderer {
         }
     }
 }
+

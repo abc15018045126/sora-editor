@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget;
+package io.github.abc15018045126.sora.widget;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -83,100 +83,100 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-import io.github.rosemoe.sora.I18nConfig;
-import io.github.rosemoe.sora.R;
-import io.github.rosemoe.sora.annotations.UnsupportedUserUsage;
-import io.github.rosemoe.sora.event.BuildEditorInfoEvent;
-import io.github.rosemoe.sora.event.ColorSchemeUpdateEvent;
-import io.github.rosemoe.sora.event.ContentChangeEvent;
-import io.github.rosemoe.sora.event.CreateContextMenuEvent;
-import io.github.rosemoe.sora.event.EditorAttachStateChangeEvent;
-import io.github.rosemoe.sora.event.EditorFocusChangeEvent;
-import io.github.rosemoe.sora.event.EditorFormatEvent;
-import io.github.rosemoe.sora.event.EditorReleaseEvent;
-import io.github.rosemoe.sora.event.Event;
-import io.github.rosemoe.sora.event.EventManager;
-import io.github.rosemoe.sora.event.EventReceiver;
-import io.github.rosemoe.sora.event.HoverEvent;
-import io.github.rosemoe.sora.event.LayoutStateChangeEvent;
-import io.github.rosemoe.sora.event.ScrollEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.event.SubscriptionReceipt;
-import io.github.rosemoe.sora.event.TextSizeChangeEvent;
-import io.github.rosemoe.sora.graphics.Paint;
-import io.github.rosemoe.sora.graphics.inlayHint.InlayHintRenderer;
-import io.github.rosemoe.sora.graphics.inlayHint.InlayHintRendererProvider;
-import io.github.rosemoe.sora.lang.EmptyLanguage;
-import io.github.rosemoe.sora.lang.Language;
-import io.github.rosemoe.sora.lang.analysis.StyleUpdateRange;
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticsContainer;
-import io.github.rosemoe.sora.lang.format.Formatter;
-import io.github.rosemoe.sora.lang.styling.CodeBlock;
-import io.github.rosemoe.sora.lang.styling.HighlightTextContainer;
-import io.github.rosemoe.sora.lang.styling.Span;
-import io.github.rosemoe.sora.lang.styling.SpanFactory;
-import io.github.rosemoe.sora.lang.styling.Styles;
-import io.github.rosemoe.sora.lang.styling.inlayHint.InlayHintsContainer;
-import io.github.rosemoe.sora.lang.styling.inlayHint.IntSetUpdateRange;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.ContentLine;
-import io.github.rosemoe.sora.text.ContentListener;
-import io.github.rosemoe.sora.text.ContentReference;
-import io.github.rosemoe.sora.text.Cursor;
-import io.github.rosemoe.sora.text.LineSeparator;
-import io.github.rosemoe.sora.text.TextLayoutHelper;
-import io.github.rosemoe.sora.text.TextRange;
-import io.github.rosemoe.sora.text.TextUtils;
-import io.github.rosemoe.sora.text.TextUtilsP;
-import io.github.rosemoe.sora.text.method.KeyMetaStates;
-import io.github.rosemoe.sora.util.Chars;
-import io.github.rosemoe.sora.util.ClipDataUtils;
-import io.github.rosemoe.sora.util.EditorHandler;
-import io.github.rosemoe.sora.util.Floats;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.util.KeyboardUtils;
-import io.github.rosemoe.sora.util.Logger;
-import io.github.rosemoe.sora.util.LongArrayList;
-import io.github.rosemoe.sora.util.Numbers;
-import io.github.rosemoe.sora.util.TemporaryFloatBuffer;
-import io.github.rosemoe.sora.util.ThemeUtils;
-import io.github.rosemoe.sora.util.ViewUtils;
-import io.github.rosemoe.sora.widget.component.EditorAutoCompletion;
-import io.github.rosemoe.sora.widget.component.EditorBuiltinComponent;
-import io.github.rosemoe.sora.widget.component.EditorContextMenuCreator;
-import io.github.rosemoe.sora.widget.component.EditorDiagnosticTooltipWindow;
-import io.github.rosemoe.sora.widget.component.EditorTextActionWindow;
-import io.github.rosemoe.sora.widget.component.Magnifier;
-import io.github.rosemoe.sora.widget.layout.Layout;
-import io.github.rosemoe.sora.widget.layout.LineBreakLayout;
-import io.github.rosemoe.sora.widget.layout.ViewMeasureHelper;
-import io.github.rosemoe.sora.widget.layout.WordwrapLayout;
-import io.github.rosemoe.sora.widget.rendering.RenderContext;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
-import io.github.rosemoe.sora.widget.snippet.SnippetController;
-import io.github.rosemoe.sora.widget.style.CursorAnimator;
-import io.github.rosemoe.sora.widget.style.DiagnosticIndicatorStyle;
-import io.github.rosemoe.sora.widget.style.LineInfoPanelPosition;
-import io.github.rosemoe.sora.widget.style.LineInfoPanelPositionMode;
-import io.github.rosemoe.sora.widget.style.LineNumberTipTextProvider;
-import io.github.rosemoe.sora.widget.style.SelectionHandleStyle;
-import io.github.rosemoe.sora.widget.style.builtin.DefaultLineNumberTip;
-import io.github.rosemoe.sora.widget.style.builtin.HandleStyleDrop;
-import io.github.rosemoe.sora.widget.style.builtin.HandleStyleSideDrop;
-import io.github.rosemoe.sora.widget.style.builtin.MoveCursorAnimator;
+import io.github.abc15018045126.sora.I18nConfig;
+import io.github.abc15018045126.sora.R;
+import io.github.abc15018045126.sora.annotations.UnsupportedUserUsage;
+import io.github.abc15018045126.sora.event.BuildEditorInfoEvent;
+import io.github.abc15018045126.sora.event.ColorSchemeUpdateEvent;
+import io.github.abc15018045126.sora.event.ContentChangeEvent;
+import io.github.abc15018045126.sora.event.CreateContextMenuEvent;
+import io.github.abc15018045126.sora.event.EditorAttachStateChangeEvent;
+import io.github.abc15018045126.sora.event.EditorFocusChangeEvent;
+import io.github.abc15018045126.sora.event.EditorFormatEvent;
+import io.github.abc15018045126.sora.event.EditorReleaseEvent;
+import io.github.abc15018045126.sora.event.Event;
+import io.github.abc15018045126.sora.event.EventManager;
+import io.github.abc15018045126.sora.event.EventReceiver;
+import io.github.abc15018045126.sora.event.HoverEvent;
+import io.github.abc15018045126.sora.event.LayoutStateChangeEvent;
+import io.github.abc15018045126.sora.event.ScrollEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.event.SubscriptionReceipt;
+import io.github.abc15018045126.sora.event.TextSizeChangeEvent;
+import io.github.abc15018045126.sora.graphics.Paint;
+import io.github.abc15018045126.sora.graphics.inlayHint.InlayHintRenderer;
+import io.github.abc15018045126.sora.graphics.inlayHint.InlayHintRendererProvider;
+import io.github.abc15018045126.sora.lang.EmptyLanguage;
+import io.github.abc15018045126.sora.lang.Language;
+import io.github.abc15018045126.sora.lang.analysis.StyleUpdateRange;
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticsContainer;
+import io.github.abc15018045126.sora.lang.format.Formatter;
+import io.github.abc15018045126.sora.lang.styling.CodeBlock;
+import io.github.abc15018045126.sora.lang.styling.HighlightTextContainer;
+import io.github.abc15018045126.sora.lang.styling.Span;
+import io.github.abc15018045126.sora.lang.styling.SpanFactory;
+import io.github.abc15018045126.sora.lang.styling.Styles;
+import io.github.abc15018045126.sora.lang.styling.inlayHint.InlayHintsContainer;
+import io.github.abc15018045126.sora.lang.styling.inlayHint.IntSetUpdateRange;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.ContentLine;
+import io.github.abc15018045126.sora.text.ContentListener;
+import io.github.abc15018045126.sora.text.ContentReference;
+import io.github.abc15018045126.sora.text.Cursor;
+import io.github.abc15018045126.sora.text.LineSeparator;
+import io.github.abc15018045126.sora.text.TextLayoutHelper;
+import io.github.abc15018045126.sora.text.TextRange;
+import io.github.abc15018045126.sora.text.TextUtils;
+import io.github.abc15018045126.sora.text.TextUtilsP;
+import io.github.abc15018045126.sora.text.method.KeyMetaStates;
+import io.github.abc15018045126.sora.util.Chars;
+import io.github.abc15018045126.sora.util.ClipDataUtils;
+import io.github.abc15018045126.sora.util.EditorHandler;
+import io.github.abc15018045126.sora.util.Floats;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.util.KeyboardUtils;
+import io.github.abc15018045126.sora.util.Logger;
+import io.github.abc15018045126.sora.util.LongArrayList;
+import io.github.abc15018045126.sora.util.Numbers;
+import io.github.abc15018045126.sora.util.TemporaryFloatBuffer;
+import io.github.abc15018045126.sora.util.ThemeUtils;
+import io.github.abc15018045126.sora.util.ViewUtils;
+import io.github.abc15018045126.sora.widget.component.EditorAutoCompletion;
+import io.github.abc15018045126.sora.widget.component.EditorBuiltinComponent;
+import io.github.abc15018045126.sora.widget.component.EditorContextMenuCreator;
+import io.github.abc15018045126.sora.widget.component.EditorDiagnosticTooltipWindow;
+import io.github.abc15018045126.sora.widget.component.EditorTextActionWindow;
+import io.github.abc15018045126.sora.widget.component.Magnifier;
+import io.github.abc15018045126.sora.widget.layout.Layout;
+import io.github.abc15018045126.sora.widget.layout.LineBreakLayout;
+import io.github.abc15018045126.sora.widget.layout.ViewMeasureHelper;
+import io.github.abc15018045126.sora.widget.layout.WordwrapLayout;
+import io.github.abc15018045126.sora.widget.rendering.RenderContext;
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme;
+import io.github.abc15018045126.sora.widget.snippet.SnippetController;
+import io.github.abc15018045126.sora.widget.style.CursorAnimator;
+import io.github.abc15018045126.sora.widget.style.DiagnosticIndicatorStyle;
+import io.github.abc15018045126.sora.widget.style.LineInfoPanelPosition;
+import io.github.abc15018045126.sora.widget.style.LineInfoPanelPositionMode;
+import io.github.abc15018045126.sora.widget.style.LineNumberTipTextProvider;
+import io.github.abc15018045126.sora.widget.style.SelectionHandleStyle;
+import io.github.abc15018045126.sora.widget.style.builtin.DefaultLineNumberTip;
+import io.github.abc15018045126.sora.widget.style.builtin.HandleStyleDrop;
+import io.github.abc15018045126.sora.widget.style.builtin.HandleStyleSideDrop;
+import io.github.abc15018045126.sora.widget.style.builtin.MoveCursorAnimator;
 import kotlin.text.StringsKt;
 
 /**
  * CodeEditor is an editor that can highlight text regions by doing basic syntax analyzing
- * This project in <a href="https://github.com/Rosemoe/sora-editor">GitHub</a>
+ * This project in <a href="https://github.com/abc15018045126/sora-editor">GitHub</a>
  * <p>
  * Note:
  * Row and line are different in this editor
  * When we say 'row', it means a line displayed on screen. It can be a part of a line in the text object.
  * When we say 'line', it means a real line in the original text.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 @SuppressWarnings("unused")
 public class CodeEditor extends View implements ContentListener, Formatter.FormatResultReceiver, InlayHintRendererProvider {
@@ -259,7 +259,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      */
     private final static String NUMBER_DIGITS = "0 1 2 3 4 5 6 7 8 9";
     private static final String LOG_TAG = "CodeEditor";
-    private final static String COPYRIGHT = "sora-editor\nCopyright (C) Rosemoe roses2020@qq.com\nThis project is distributed under the LGPL v2.1 license";
+    private final static String COPYRIGHT = "sora-editor\nCopyright (C) abc15018045126 roses2020@qq.com\nThis project is distributed under the LGPL v2.1 license";
     protected final EditorKeyEventHandler keyEventHandler = new EditorKeyEventHandler(this);
     protected SymbolPairMatch languageSymbolPairs;
     protected EditorTextActionWindow textActionWindow;
@@ -284,6 +284,9 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     private float dividerMarginLeft;
     private float dividerMarginRight;
     private float insertSelectionWidth;
+    /**
+     * Margin left for line number
+     */
     private float blockLineWidth;
     private float textBorderWidth;
     private float verticalScrollFactor;
@@ -407,7 +410,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     /**
      * Get builtin component so that you can enable/disable them or do some other actions.
      *
-     * @see io.github.rosemoe.sora.widget.component
+     * @see io.github.abc15018045126.sora.widget.component
      */
     @SuppressWarnings("unchecked")
     @NonNull
@@ -515,7 +518,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
         return isLineNumberEnabled() ?
                 measureLineNumber() + dividerMarginLeft + dividerMarginRight + dividerWidth +
                         (renderer.hasSideHintIcons() ? getRowHeight() : 0) :
-                dpUnit * 12;
+                dividerMarginLeft + dividerMarginRight;
     }
 
     /**
@@ -1248,7 +1251,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * Set display position mode the line number panel beside vertical scroll bar
      *
      * @param mode Default LineInfoPanelPosition.FOLLOW
-     * @see io.github.rosemoe.sora.widget.style.LineInfoPanelPositionMode
+     * @see io.github.abc15018045126.sora.widget.style.LineInfoPanelPositionMode
      */
     public void setLnPanelPositionMode(int mode) {
         this.lnPanelPositionMode = mode;
@@ -1268,7 +1271,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * Only TOP,CENTER and BOTTOM will be effective when position mode is follow.
      *
      * @param position default TOP|RIGHT
-     * @see io.github.rosemoe.sora.widget.style.LineInfoPanelPosition
+     * @see io.github.abc15018045126.sora.widget.style.LineInfoPanelPosition
      */
     public void setLnPanelPosition(int position) {
         this.lnPanelPosition = position;
@@ -2475,7 +2478,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * Format text in the given region.
      * <p>
      * Note: Make sure the given positions are valid (line, column and index). Typically, you should
-     * obtain a position by an object of {@link io.github.rosemoe.sora.text.Indexer}
+     * obtain a position by an object of {@link io.github.abc15018045126.sora.text.Indexer}
      *
      * @param start Start position created by Indexer
      * @param end   End position created by Indexer
@@ -4048,7 +4051,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     }
 
     /**
-     * Subscribe event of the given type, without {@link io.github.rosemoe.sora.event.Unsubscribe}.
+     * Subscribe event of the given type, without {@link io.github.abc15018045126.sora.event.Unsubscribe}.
      *
      * @see EventManager#subscribeEvent(Class, EventReceiver)
      */
@@ -5366,3 +5369,4 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     }
 
 }
+

@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.lang.completion;
+package io.github.abc15018045126.sora.lang.completion;
 
 import android.os.Handler;
 
@@ -36,8 +36,8 @@ import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import io.github.rosemoe.sora.annotations.UnsupportedUserUsage;
-import io.github.rosemoe.sora.lang.Language;
+import io.github.abc15018045126.sora.annotations.UnsupportedUserUsage;
+import io.github.abc15018045126.sora.lang.Language;
 
 /**
  * CompletionPublisher manages completion items to be added in one completion analyzing process.
@@ -281,3 +281,4 @@ public class CompletionPublisher {
     }
 
 }
+

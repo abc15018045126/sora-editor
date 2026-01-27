@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.lsp.editor.hover
+package io.github.abc15018045126.sora.lsp.editor.hover
 
 import android.graphics.Typeface
 import android.graphics.drawable.GradientDrawable
@@ -8,10 +8,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ScrollView
 import android.widget.TextView
-import io.github.rosemoe.sora.lsp.R
-import io.github.rosemoe.sora.lsp.editor.curvedTextScale
-import io.github.rosemoe.sora.lsp.editor.text.SimpleMarkdownRenderer
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lsp.R
+import io.github.abc15018045126.sora.lsp.editor.curvedTextScale
+import io.github.abc15018045126.sora.lsp.editor.text.SimpleMarkdownRenderer
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 import kotlinx.coroutines.Job
 import org.eclipse.lsp4j.Hover
 

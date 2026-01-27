@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,29 +18,29 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.widget.ext
+package io.github.abc15018045126.sora.widget.ext
 
 import android.content.Intent
 import android.net.Uri
-import io.github.rosemoe.sora.event.ClickEvent
-import io.github.rosemoe.sora.event.DoubleClickEvent
-import io.github.rosemoe.sora.event.EditorMotionEvent
-import io.github.rosemoe.sora.event.LongPressEvent
-import io.github.rosemoe.sora.event.subscribeAlways
-import io.github.rosemoe.sora.lang.styling.Span
-import io.github.rosemoe.sora.lang.styling.span.SpanClickableUrl
-import io.github.rosemoe.sora.lang.styling.span.SpanExtAttrs
-import io.github.rosemoe.sora.lang.styling.span.SpanInteractionInfo
-import io.github.rosemoe.sora.text.TextRange
-import io.github.rosemoe.sora.util.IntPair
-import io.github.rosemoe.sora.widget.CodeEditor
-import io.github.rosemoe.sora.widget.IN_BOUND
-import io.github.rosemoe.sora.widget.REGION_TEXT
-import io.github.rosemoe.sora.widget.resolveTouchRegion
+import io.github.abc15018045126.sora.event.ClickEvent
+import io.github.abc15018045126.sora.event.DoubleClickEvent
+import io.github.abc15018045126.sora.event.EditorMotionEvent
+import io.github.abc15018045126.sora.event.LongPressEvent
+import io.github.abc15018045126.sora.event.subscribeAlways
+import io.github.abc15018045126.sora.lang.styling.Span
+import io.github.abc15018045126.sora.lang.styling.span.SpanClickableUrl
+import io.github.abc15018045126.sora.lang.styling.span.SpanExtAttrs
+import io.github.abc15018045126.sora.lang.styling.span.SpanInteractionInfo
+import io.github.abc15018045126.sora.text.TextRange
+import io.github.abc15018045126.sora.util.IntPair
+import io.github.abc15018045126.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.widget.IN_BOUND
+import io.github.abc15018045126.sora.widget.REGION_TEXT
+import io.github.abc15018045126.sora.widget.resolveTouchRegion
 
 /**
  * Handle span interaction for editor. This is a optional part of editor currently.
@@ -51,7 +51,7 @@ import io.github.rosemoe.sora.widget.resolveTouchRegion
  * Otherwise, single span interaction event will
  *  be handled multiple times.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 open class EditorSpanInteractionHandler(val editor: CodeEditor) {
 

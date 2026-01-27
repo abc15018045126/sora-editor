@@ -12,15 +12,15 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.theme
+package io.github.abc15018045126.sora.langs.monarch.theme
 
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.JsonReader
 import com.squareup.moshi.JsonWriter
 import com.squareup.moshi.Moshi
 import io.github.dingyi222666.monarch.loader.json.addLast
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.LanguageConfigurationAdapter
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.LanguageConfiguration
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.LanguageConfigurationAdapter
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.LanguageConfiguration
 
 class TokenThemeAdapter : JsonAdapter<TokenTheme>() {
     override fun fromJson(reader: JsonReader): TokenTheme {

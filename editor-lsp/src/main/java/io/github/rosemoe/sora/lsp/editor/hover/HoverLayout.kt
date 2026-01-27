@@ -1,9 +1,9 @@
-package io.github.rosemoe.sora.lsp.editor.hover
+package io.github.abc15018045126.sora.lsp.editor.hover
 
 import android.graphics.Typeface
 import android.view.LayoutInflater
 import android.view.View
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 import org.eclipse.lsp4j.Hover
 
 interface HoverLayout {

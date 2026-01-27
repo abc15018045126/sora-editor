@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2025  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2025  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,14 +18,14 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2025  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2025  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -42,24 +42,24 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.graphics.inlayHint
+package io.github.abc15018045126.sora.graphics.inlayHint
 
 import android.graphics.Canvas
-import io.github.rosemoe.sora.graphics.InlayHintRenderParams
-import io.github.rosemoe.sora.graphics.Paint
-import io.github.rosemoe.sora.lang.styling.inlayHint.InlayHint
-import io.github.rosemoe.sora.lang.styling.inlayHint.TextInlayHint
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.graphics.InlayHintRenderParams
+import io.github.abc15018045126.sora.graphics.Paint
+import io.github.abc15018045126.sora.lang.styling.inlayHint.InlayHint
+import io.github.abc15018045126.sora.lang.styling.inlayHint.TextInlayHint
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 
 /**
  * A general inlay hint of text. The hint text will be displayed in a round colored rect.
  *
  * @see TextInlayHint
- * @author Rosemoe
+ * @author abc15018045126
  */
 open class TextInlayHintRenderer : InlayHintRenderer() {
 

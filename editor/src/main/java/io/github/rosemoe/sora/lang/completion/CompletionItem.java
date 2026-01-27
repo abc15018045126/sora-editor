@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,19 +18,19 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.lang.completion;
+package io.github.abc15018045126.sora.lang.completion;
 
 import android.graphics.drawable.Drawable;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.widget.CodeEditor;
 
 /**
  * The class used to save auto complete result items.
@@ -41,7 +41,7 @@ import io.github.rosemoe.sora.widget.CodeEditor;
  * <p>
  * For the simplest usage, see {@link SimpleCompletionItem}
  *
- * @author Rosemoe
+ * @author abc15018045126
  * @see SimpleCompletionItem
  */
 @SuppressWarnings("CanBeFinal")
@@ -159,4 +159,5 @@ public abstract class CompletionItem {
     public abstract void performCompletion(@NonNull CodeEditor editor, @NonNull Content text, int line, int column);
 
 }
+
 

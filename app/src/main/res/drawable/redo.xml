@@ -1,7 +1,7 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   ~    sora-editor - the awesome code editor for Android
-  ~    https://github.com/Rosemoe/sora-editor
-  ~    Copyright (C) 2020-2024  Rosemoe
+  ~    https://github.com/abc15018045126/sora-editor
+  ~    Copyright (C) 2020-2024  abc15018045126
   ~
   ~     This library is free software; you can redistribute it and/or
   ~     modify it under the terms of the GNU Lesser General Public
@@ -18,7 +18,7 @@
   ~     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
   ~     USA
   ~
-  ~     Please contact Rosemoe by email 2073412493@qq.com if you need
+  ~     Please contact abc15018045126 by email 2073412493@qq.com if you need
   ~     additional information or have any questions
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
@@ -33,3 +33,4 @@
       android:fillColor="@android:color/white"
       android:pathData="M18.4,10.6C16.55,8.99 14.15,8 11.5,8c-4.65,0 -8.58,3.03 -9.96,7.22L3.9,16c1.05,-3.19 4.05,-5.5 7.6,-5.5 1.95,0 3.73,0.72 5.12,1.88L13,16h9V7l-3.6,3.6z"/>
 </vector>
+

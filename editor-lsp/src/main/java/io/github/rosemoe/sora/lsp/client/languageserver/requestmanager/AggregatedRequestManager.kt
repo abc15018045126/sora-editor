@@ -1,8 +1,8 @@
-package io.github.rosemoe.sora.lsp.client.languageserver.requestmanager
+package io.github.abc15018045126.sora.lsp.client.languageserver.requestmanager
 
-import io.github.rosemoe.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
-import io.github.rosemoe.sora.lsp.requests.Timeout
-import io.github.rosemoe.sora.lsp.requests.Timeouts
+import io.github.abc15018045126.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
+import io.github.abc15018045126.sora.lsp.requests.Timeout
+import io.github.abc15018045126.sora.lsp.requests.Timeouts
 import org.eclipse.lsp4j.ApplyWorkspaceEditParams
 import org.eclipse.lsp4j.ApplyWorkspaceEditResponse
 import org.eclipse.lsp4j.CodeAction
@@ -83,7 +83,7 @@ import org.eclipse.lsp4j.jsonrpc.messages.Either
 import org.eclipse.lsp4j.jsonrpc.messages.Either3
 import org.eclipse.lsp4j.services.TextDocumentService
 import org.eclipse.lsp4j.services.WorkspaceService
-import io.github.rosemoe.sora.lsp.utils.merge
+import io.github.abc15018045126.sora.lsp.utils.merge
 import java.util.LinkedHashMap
 import java.util.concurrent.CompletableFuture
 import java.util.concurrent.TimeUnit

@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2023  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2023  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,25 +18,25 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.editor.completion
+package io.github.abc15018045126.sora.lsp.editor.completion
 
-import io.github.rosemoe.sora.lang.completion.CompletionItemKind
-import io.github.rosemoe.sora.lang.completion.SimpleCompletionIconDrawer.draw
-import io.github.rosemoe.sora.lang.completion.snippet.parser.CodeSnippetParser
-import io.github.rosemoe.sora.lsp.editor.LspEventManager
-import io.github.rosemoe.sora.lsp.events.EventType
-import io.github.rosemoe.sora.lsp.events.document.applyEdits
-import io.github.rosemoe.sora.lsp.utils.asLspPosition
-import io.github.rosemoe.sora.lsp.utils.createPosition
-import io.github.rosemoe.sora.lsp.utils.createRange
-import io.github.rosemoe.sora.text.CharPosition
-import io.github.rosemoe.sora.text.Content
-import io.github.rosemoe.sora.util.Logger
-import io.github.rosemoe.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.lang.completion.CompletionItemKind
+import io.github.abc15018045126.sora.lang.completion.SimpleCompletionIconDrawer.draw
+import io.github.abc15018045126.sora.lang.completion.snippet.parser.CodeSnippetParser
+import io.github.abc15018045126.sora.lsp.editor.LspEventManager
+import io.github.abc15018045126.sora.lsp.events.EventType
+import io.github.abc15018045126.sora.lsp.events.document.applyEdits
+import io.github.abc15018045126.sora.lsp.utils.asLspPosition
+import io.github.abc15018045126.sora.lsp.utils.createPosition
+import io.github.abc15018045126.sora.lsp.utils.createRange
+import io.github.abc15018045126.sora.text.CharPosition
+import io.github.abc15018045126.sora.text.Content
+import io.github.abc15018045126.sora.util.Logger
+import io.github.abc15018045126.sora.widget.CodeEditor
 import org.eclipse.lsp4j.CompletionItem
 import org.eclipse.lsp4j.InsertTextFormat
 import org.eclipse.lsp4j.TextEdit
@@ -46,7 +46,7 @@ class LspCompletionItem(
     private val completionItem: CompletionItem,
     private val eventManager: LspEventManager,
     prefixLength: Int
-) : io.github.rosemoe.sora.lang.completion.CompletionItem(
+) : io.github.abc15018045126.sora.lang.completion.CompletionItem(
     completionItem.label,
     completionItem.detail
 ) {
@@ -164,5 +164,6 @@ class LspCompletionItem(
         // do nothing
     }
 }
+
 
 

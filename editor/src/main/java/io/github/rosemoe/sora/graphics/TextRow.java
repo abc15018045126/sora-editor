@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2025  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2025  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.graphics;
+package io.github.abc15018045126.sora.graphics;
 
 import android.graphics.Canvas;
 import android.graphics.Path;
@@ -37,29 +37,29 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import io.github.rosemoe.sora.lang.styling.Span;
-import io.github.rosemoe.sora.lang.styling.SpanFactory;
-import io.github.rosemoe.sora.lang.styling.TextStyle;
-import io.github.rosemoe.sora.lang.styling.inlayHint.CharacterSide;
-import io.github.rosemoe.sora.lang.styling.inlayHint.InlayHint;
-import io.github.rosemoe.sora.lang.styling.span.SpanExtAttrs;
-import io.github.rosemoe.sora.lang.styling.span.SpanExternalRenderer;
-import io.github.rosemoe.sora.text.ContentLine;
-import io.github.rosemoe.sora.text.FunctionCharacters;
-import io.github.rosemoe.sora.text.bidi.Directions;
-import io.github.rosemoe.sora.text.bidi.IDirections;
-import io.github.rosemoe.sora.text.bidi.VisualDirections;
-import io.github.rosemoe.sora.text.breaker.WordBreaker;
-import io.github.rosemoe.sora.text.breaker.WordBreakerEmpty;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.util.RendererUtils;
-import io.github.rosemoe.sora.util.ReversedListView;
-import io.github.rosemoe.sora.util.TemporaryFloatBuffer;
-import io.github.rosemoe.sora.widget.layout.RowElement;
-import io.github.rosemoe.sora.widget.layout.RowElementTypes;
-import io.github.rosemoe.sora.widget.rendering.RenderingConstants;
-import io.github.rosemoe.sora.widget.rendering.TextAdvancesCache;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
+import io.github.abc15018045126.sora.lang.styling.Span;
+import io.github.abc15018045126.sora.lang.styling.SpanFactory;
+import io.github.abc15018045126.sora.lang.styling.TextStyle;
+import io.github.abc15018045126.sora.lang.styling.inlayHint.CharacterSide;
+import io.github.abc15018045126.sora.lang.styling.inlayHint.InlayHint;
+import io.github.abc15018045126.sora.lang.styling.span.SpanExtAttrs;
+import io.github.abc15018045126.sora.lang.styling.span.SpanExternalRenderer;
+import io.github.abc15018045126.sora.text.ContentLine;
+import io.github.abc15018045126.sora.text.FunctionCharacters;
+import io.github.abc15018045126.sora.text.bidi.Directions;
+import io.github.abc15018045126.sora.text.bidi.IDirections;
+import io.github.abc15018045126.sora.text.bidi.VisualDirections;
+import io.github.abc15018045126.sora.text.breaker.WordBreaker;
+import io.github.abc15018045126.sora.text.breaker.WordBreakerEmpty;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.util.RendererUtils;
+import io.github.abc15018045126.sora.util.ReversedListView;
+import io.github.abc15018045126.sora.util.TemporaryFloatBuffer;
+import io.github.abc15018045126.sora.widget.layout.RowElement;
+import io.github.abc15018045126.sora.widget.layout.RowElementTypes;
+import io.github.abc15018045126.sora.widget.rendering.RenderingConstants;
+import io.github.abc15018045126.sora.widget.rendering.TextAdvancesCache;
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme;
 
 /**
  * {@link TextRow} is a helper class for a single text row to shape, measure and draw.
@@ -73,7 +73,7 @@ import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
  * <p>
  * The indices are mostly unchecked in this class, so caller have to duty to offer valid indices.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class TextRow {
 
@@ -1399,3 +1399,4 @@ public class TextRow {
 
     }
 }
+

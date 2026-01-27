@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,34 +18,34 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.widget.component
+package io.github.abc15018045126.sora.widget.component
 
 import android.view.LayoutInflater
 import android.view.MotionEvent
 import android.view.View
-import io.github.rosemoe.sora.R
-import io.github.rosemoe.sora.event.ColorSchemeUpdateEvent
-import io.github.rosemoe.sora.event.ContentChangeEvent
-import io.github.rosemoe.sora.event.EditorFocusChangeEvent
-import io.github.rosemoe.sora.event.EditorReleaseEvent
-import io.github.rosemoe.sora.event.HoverEvent
-import io.github.rosemoe.sora.event.ScrollEvent
-import io.github.rosemoe.sora.event.SelectionChangeEvent
-import io.github.rosemoe.sora.event.TextSizeChangeEvent
-import io.github.rosemoe.sora.event.subscribeAlways
-import io.github.rosemoe.sora.event.subscribeEvent
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticDetail
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticRegion
-import io.github.rosemoe.sora.text.CharPosition
-import io.github.rosemoe.sora.util.IntPair
-import io.github.rosemoe.sora.util.ViewUtils
-import io.github.rosemoe.sora.widget.CodeEditor
-import io.github.rosemoe.sora.widget.base.EditorPopupWindow
-import io.github.rosemoe.sora.widget.getComponent
+import io.github.abc15018045126.sora.R
+import io.github.abc15018045126.sora.event.ColorSchemeUpdateEvent
+import io.github.abc15018045126.sora.event.ContentChangeEvent
+import io.github.abc15018045126.sora.event.EditorFocusChangeEvent
+import io.github.abc15018045126.sora.event.EditorReleaseEvent
+import io.github.abc15018045126.sora.event.HoverEvent
+import io.github.abc15018045126.sora.event.ScrollEvent
+import io.github.abc15018045126.sora.event.SelectionChangeEvent
+import io.github.abc15018045126.sora.event.TextSizeChangeEvent
+import io.github.abc15018045126.sora.event.subscribeAlways
+import io.github.abc15018045126.sora.event.subscribeEvent
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticDetail
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticRegion
+import io.github.abc15018045126.sora.text.CharPosition
+import io.github.abc15018045126.sora.util.IntPair
+import io.github.abc15018045126.sora.util.ViewUtils
+import io.github.abc15018045126.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.widget.base.EditorPopupWindow
+import io.github.abc15018045126.sora.widget.getComponent
 import kotlin.math.PI
 import kotlin.math.abs
 
@@ -329,3 +329,4 @@ open class EditorDiagnosticTooltipWindow(editor: CodeEditor) : EditorPopupWindow
     }
 
 }
+

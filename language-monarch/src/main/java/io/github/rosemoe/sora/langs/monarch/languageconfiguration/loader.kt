@@ -12,25 +12,25 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.languageconfiguration
+package io.github.abc15018045126.sora.langs.monarch.languageconfiguration
 
 import com.squareup.moshi.JsonAdapter
 import com.squareup.moshi.JsonReader
 import com.squareup.moshi.JsonWriter
 import io.github.dingyi222666.regex.GlobalRegexLib
 import io.github.dingyi222666.regex.Regex
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.AutoClosingPair
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.AutoClosingPairConditional
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.BaseAutoClosingPair
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.CharacterPair
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.CommentRule
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.EnterAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.FoldingMarkers
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.FoldingRules
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentationRule
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.LanguageConfiguration
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.OnEnterRule
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.AutoClosingPair
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.AutoClosingPairConditional
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.BaseAutoClosingPair
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.CharacterPair
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.CommentRule
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.EnterAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.FoldingMarkers
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.FoldingRules
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentationRule
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.LanguageConfiguration
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.OnEnterRule
 import kotlin.properties.Delegates
 
 class LanguageConfigurationAdapter : JsonAdapter<LanguageConfiguration>() {

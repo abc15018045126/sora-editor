@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.lsp.editor.text
+package io.github.abc15018045126.sora.lsp.editor.text
 
 import android.graphics.Typeface
 import android.os.Bundle
@@ -7,17 +7,17 @@ import android.text.Spanned
 import android.text.style.ForegroundColorSpan
 import android.text.style.StrikethroughSpan
 import android.text.style.StyleSpan
-import io.github.rosemoe.sora.lang.Language
-import io.github.rosemoe.sora.lang.analysis.AnalyzeManager
-import io.github.rosemoe.sora.lang.analysis.StyleReceiver
-import io.github.rosemoe.sora.lang.brackets.BracketsProvider
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticsContainer
-import io.github.rosemoe.sora.lang.styling.Span
-import io.github.rosemoe.sora.lang.styling.Styles
-import io.github.rosemoe.sora.lang.styling.TextStyle
-import io.github.rosemoe.sora.text.Content
-import io.github.rosemoe.sora.text.ContentReference
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lang.Language
+import io.github.abc15018045126.sora.lang.analysis.AnalyzeManager
+import io.github.abc15018045126.sora.lang.analysis.StyleReceiver
+import io.github.abc15018045126.sora.lang.brackets.BracketsProvider
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticsContainer
+import io.github.abc15018045126.sora.lang.styling.Span
+import io.github.abc15018045126.sora.lang.styling.Styles
+import io.github.abc15018045126.sora.lang.styling.TextStyle
+import io.github.abc15018045126.sora.text.Content
+import io.github.abc15018045126.sora.text.ContentReference
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 import java.util.concurrent.atomic.AtomicBoolean
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlinx.coroutines.sync.Mutex

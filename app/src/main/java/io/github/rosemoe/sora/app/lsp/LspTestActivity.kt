@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,11 +18,11 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.app.lsp
+package io.github.abc15018045126.sora.app.lsp
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -32,33 +32,33 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.lifecycle.lifecycleScope
-import io.github.rosemoe.sora.app.BaseEditorActivity
-import io.github.rosemoe.sora.app.R
-import io.github.rosemoe.sora.app.switchThemeIfRequired
-import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme
-import io.github.rosemoe.sora.langs.textmate.TextMateLanguage
-import io.github.rosemoe.sora.langs.textmate.registry.FileProviderRegistry
-import io.github.rosemoe.sora.langs.textmate.registry.GrammarRegistry
-import io.github.rosemoe.sora.langs.textmate.registry.ThemeRegistry
-import io.github.rosemoe.sora.langs.textmate.registry.dsl.languages
-import io.github.rosemoe.sora.langs.textmate.registry.model.ThemeModel
-import io.github.rosemoe.sora.langs.textmate.registry.provider.AssetsFileResolver
-import io.github.rosemoe.sora.lsp.client.connection.LocalSocketStreamConnectionProvider
-import io.github.rosemoe.sora.lsp.client.languageserver.serverdefinition.CustomLanguageServerDefinition
-import io.github.rosemoe.sora.lsp.client.languageserver.serverdefinition.languageServerDefinition
-import io.github.rosemoe.sora.lsp.client.languageserver.wrapper.EventHandler
-import io.github.rosemoe.sora.lsp.editor.LspEditor
-import io.github.rosemoe.sora.lsp.editor.LspProject
-import io.github.rosemoe.sora.lsp.editor.diagnostics.DiagnosticsContainer
-import io.github.rosemoe.sora.lsp.editor.text.MarkdownCodeHighlighterRegistry
-import io.github.rosemoe.sora.lsp.editor.text.withEditorHighlighter
-import io.github.rosemoe.sora.lsp.events.EventType
-import io.github.rosemoe.sora.lsp.events.code.codeAction
-import io.github.rosemoe.sora.lsp.utils.asLspRange
-import io.github.rosemoe.sora.text.ContentIO
-import io.github.rosemoe.sora.widget.component.EditorAutoCompletion
-import io.github.rosemoe.sora.widget.component.EditorTextActionWindow
-import io.github.rosemoe.sora.widget.getComponent
+import io.github.abc15018045126.sora.app.BaseEditorActivity
+import io.github.abc15018045126.sora.app.R
+import io.github.abc15018045126.sora.app.switchThemeIfRequired
+import io.github.abc15018045126.sora.langs.textmate.TextMateColorScheme
+import io.github.abc15018045126.sora.langs.textmate.TextMateLanguage
+import io.github.abc15018045126.sora.langs.textmate.registry.FileProviderRegistry
+import io.github.abc15018045126.sora.langs.textmate.registry.GrammarRegistry
+import io.github.abc15018045126.sora.langs.textmate.registry.ThemeRegistry
+import io.github.abc15018045126.sora.langs.textmate.registry.dsl.languages
+import io.github.abc15018045126.sora.langs.textmate.registry.model.ThemeModel
+import io.github.abc15018045126.sora.langs.textmate.registry.provider.AssetsFileResolver
+import io.github.abc15018045126.sora.lsp.client.connection.LocalSocketStreamConnectionProvider
+import io.github.abc15018045126.sora.lsp.client.languageserver.serverdefinition.CustomLanguageServerDefinition
+import io.github.abc15018045126.sora.lsp.client.languageserver.serverdefinition.languageServerDefinition
+import io.github.abc15018045126.sora.lsp.client.languageserver.wrapper.EventHandler
+import io.github.abc15018045126.sora.lsp.editor.LspEditor
+import io.github.abc15018045126.sora.lsp.editor.LspProject
+import io.github.abc15018045126.sora.lsp.editor.diagnostics.DiagnosticsContainer
+import io.github.abc15018045126.sora.lsp.editor.text.MarkdownCodeHighlighterRegistry
+import io.github.abc15018045126.sora.lsp.editor.text.withEditorHighlighter
+import io.github.abc15018045126.sora.lsp.events.EventType
+import io.github.abc15018045126.sora.lsp.events.code.codeAction
+import io.github.abc15018045126.sora.lsp.utils.asLspRange
+import io.github.abc15018045126.sora.text.ContentIO
+import io.github.abc15018045126.sora.widget.component.EditorAutoCompletion
+import io.github.abc15018045126.sora.widget.component.EditorTextActionWindow
+import io.github.abc15018045126.sora.widget.getComponent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -334,4 +334,5 @@ class LspTestActivity : BaseEditorActivity() {
     }
 
 }
+
 

@@ -11,9 +11,9 @@
  */
 package org.eclipse.tm4e.languageconfiguration.internal.utils;
 
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.util.IntPair;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.util.IntPair;
 
 public final class TextUtils {
 
@@ -193,7 +193,7 @@ public final class TextUtils {
 
         var line = d.getLine(position.line);
 
-        var startIndex = IntPair.getFirst(io.github.rosemoe.sora.text.TextUtils.findLeadingAndTrailingWhitespacePos(
+        var startIndex = IntPair.getFirst(io.github.abc15018045126.sora.text.TextUtils.findLeadingAndTrailingWhitespacePos(
                 line
         ));
 

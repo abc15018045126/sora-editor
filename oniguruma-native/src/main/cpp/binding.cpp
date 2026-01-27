@@ -1,5 +1,5 @@
 //
-// Created by Rosemoe on 2025/11/8.
+// Created by abc15018045126 on 2025/11/8.
 //
 
 #include "oniguruma.h"
@@ -84,7 +84,7 @@ searchCached(OnigCachedRegex *regex, jlong cacheKey, const unsigned char *data, 
 
 extern "C"
 JNIEXPORT jlong JNICALL
-Java_io_github_rosemoe_oniguruma_OnigNative_nCreateRegex(JNIEnv *env, jclass clazz,
+Java_io_github_abc15018045126_oniguruma_OnigNative_nCreateRegex(JNIEnv *env, jclass clazz,
                                                          jbyteArray pattern,
                                                      jboolean ignore_case) {
     auto size = env->GetArrayLength(pattern);
@@ -113,7 +113,7 @@ Java_io_github_rosemoe_oniguruma_OnigNative_nCreateRegex(JNIEnv *env, jclass cla
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_io_github_rosemoe_oniguruma_OnigNative_nRegexSearch(JNIEnv *env, jclass clazz,
+Java_io_github_abc15018045126_oniguruma_OnigNative_nRegexSearch(JNIEnv *env, jclass clazz,
                                                          jlong native_ptr,
                                                         jlong cache_key, jbyteArray str, jint start,
                                                         jint end) {
@@ -148,7 +148,7 @@ Java_io_github_rosemoe_oniguruma_OnigNative_nRegexSearch(JNIEnv *env, jclass cla
 
 extern "C"
 JNIEXPORT void JNICALL
-Java_io_github_rosemoe_oniguruma_OnigNative_releaseRegex(JNIEnv *env, jclass clazz,
+Java_io_github_abc15018045126_oniguruma_OnigNative_releaseRegex(JNIEnv *env, jclass clazz,
                                                          jlong native_ptr) {
     if (native_ptr != 0L) {
         auto regex = reinterpret_cast<OnigCachedRegex *>(native_ptr);
@@ -161,7 +161,7 @@ Java_io_github_rosemoe_oniguruma_OnigNative_releaseRegex(JNIEnv *env, jclass cla
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_io_github_rosemoe_oniguruma_OnigNative_nRegexSearchBatch(JNIEnv *env, jclass clazz,
+Java_io_github_abc15018045126_oniguruma_OnigNative_nRegexSearchBatch(JNIEnv *env, jclass clazz,
                                                              jlongArray native_ptrs,
                                                              jlong cache_key, jbyteArray str,
                                                              jint start, jint end) {

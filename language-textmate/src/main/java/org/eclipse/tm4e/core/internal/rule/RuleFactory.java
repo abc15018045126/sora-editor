@@ -32,7 +32,7 @@ import org.eclipse.tm4e.core.internal.grammar.raw.IRawRepository;
 import org.eclipse.tm4e.core.internal.grammar.raw.IRawRule;
 import org.eclipse.tm4e.core.internal.grammar.raw.RawRule;
 
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.util.Logger;
 
 /**
  * @see <a href=

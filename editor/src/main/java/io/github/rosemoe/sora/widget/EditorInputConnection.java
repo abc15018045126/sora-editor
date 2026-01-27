@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget;
+package io.github.abc15018045126.sora.widget;
 
 import android.os.Bundle;
 import android.os.Handler;
@@ -43,19 +43,19 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 
-import io.github.rosemoe.sora.event.ContentChangeEvent;
-import io.github.rosemoe.sora.event.ImePrivateCommandEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.ComposingText;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.Cursor;
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.event.ContentChangeEvent;
+import io.github.abc15018045126.sora.event.ImePrivateCommandEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.ComposingText;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.Cursor;
+import io.github.abc15018045126.sora.util.Logger;
 
 /**
  * Connection between input method and editor
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 class EditorInputConnection extends BaseInputConnection {
 
@@ -711,3 +711,4 @@ class EditorInputConnection extends BaseInputConnection {
         return new TextSnapshot(surroundingText, composingStart, composingEnd, cursorCapsMode);
     }
 }
+

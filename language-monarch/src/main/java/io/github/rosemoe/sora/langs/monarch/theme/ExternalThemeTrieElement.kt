@@ -12,7 +12,7 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.theme
+package io.github.abc15018045126.sora.langs.monarch.theme
 
 class ExternalThemeTrieElement(
     val mainRule: ThemeTrieElementRule,

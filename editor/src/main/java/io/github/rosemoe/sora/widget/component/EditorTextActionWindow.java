@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget.component;
+package io.github.abc15018045126.sora.widget.component;
 
 import android.annotation.SuppressLint;
 import android.graphics.PorterDuff;
@@ -35,26 +35,26 @@ import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 
-import io.github.rosemoe.sora.R;
-import io.github.rosemoe.sora.event.ColorSchemeUpdateEvent;
-import io.github.rosemoe.sora.event.DragSelectStopEvent;
-import io.github.rosemoe.sora.event.EditorFocusChangeEvent;
-import io.github.rosemoe.sora.event.EditorReleaseEvent;
-import io.github.rosemoe.sora.event.EventManager;
-import io.github.rosemoe.sora.event.HandleStateChangeEvent;
-import io.github.rosemoe.sora.event.InterceptTarget;
-import io.github.rosemoe.sora.event.LongPressEvent;
-import io.github.rosemoe.sora.event.ScrollEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.widget.CodeEditor;
-import io.github.rosemoe.sora.widget.EditorTouchEventHandler;
-import io.github.rosemoe.sora.widget.base.EditorPopupWindow;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
+import io.github.abc15018045126.sora.R;
+import io.github.abc15018045126.sora.event.ColorSchemeUpdateEvent;
+import io.github.abc15018045126.sora.event.DragSelectStopEvent;
+import io.github.abc15018045126.sora.event.EditorFocusChangeEvent;
+import io.github.abc15018045126.sora.event.EditorReleaseEvent;
+import io.github.abc15018045126.sora.event.EventManager;
+import io.github.abc15018045126.sora.event.HandleStateChangeEvent;
+import io.github.abc15018045126.sora.event.InterceptTarget;
+import io.github.abc15018045126.sora.event.LongPressEvent;
+import io.github.abc15018045126.sora.event.ScrollEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.widget.EditorTouchEventHandler;
+import io.github.abc15018045126.sora.widget.base.EditorPopupWindow;
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme;
 
 /**
  * This window will show when selecting text to present text actions.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class EditorTextActionWindow extends EditorPopupWindow implements View.OnClickListener, EditorBuiltinComponent {
     private final static long DELAY = 200;
@@ -358,4 +358,5 @@ public class EditorTextActionWindow extends EditorPopupWindow implements View.On
     }
 
 }
+
 

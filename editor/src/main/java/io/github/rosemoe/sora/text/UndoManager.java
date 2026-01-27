@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.text;
+package io.github.abc15018045126.sora.text;
 
 import android.os.Parcel;
 import android.os.Parcelable;
@@ -36,7 +36,7 @@ import java.util.List;
  * Helper class for Content to take down modification
  * As well as provide Undo/Redo actions
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public final class UndoManager implements ContentListener, Parcelable {
 
@@ -376,7 +376,7 @@ public final class UndoManager implements ContentListener, Parcelable {
     /**
      * Base class of content actions
      *
-     * @author Rosemoe
+     * @author abc15018045126
      */
     public static abstract class ContentAction implements Parcelable {
 
@@ -416,7 +416,7 @@ public final class UndoManager implements ContentListener, Parcelable {
     /**
      * Insert action model for UndoManager
      *
-     * @author Rosemoe
+     * @author abc15018045126
      */
     public static final class InsertAction extends ContentAction {
 
@@ -747,3 +747,4 @@ public final class UndoManager implements ContentListener, Parcelable {
         }
     }
 }
+

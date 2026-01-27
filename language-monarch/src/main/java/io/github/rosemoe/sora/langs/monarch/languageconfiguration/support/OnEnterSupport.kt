@@ -12,16 +12,16 @@
  *
  ******************************************************************************/
 
-package io.github.rosemoe.sora.langs.monarch.languageconfiguration.support
+package io.github.abc15018045126.sora.langs.monarch.languageconfiguration.support
 
 import io.github.dingyi222666.regex.GlobalRegexLib
 import io.github.dingyi222666.regex.Regex
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.CharacterPair
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.EnterAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.IndentAction
-import io.github.rosemoe.sora.langs.monarch.languageconfiguration.model.OnEnterRule
-import io.github.rosemoe.sora.langs.monarch.utils.escapeRegExpCharacters
-import io.github.rosemoe.sora.langs.monarch.utils.matchesPartially
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.CharacterPair
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.EnterAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.IndentAction
+import io.github.abc15018045126.sora.langs.monarch.languageconfiguration.model.OnEnterRule
+import io.github.abc15018045126.sora.langs.monarch.utils.escapeRegExpCharacters
+import io.github.abc15018045126.sora.langs.monarch.utils.matchesPartially
 import java.util.regex.Pattern
 
 // See https://github.com/microsoft/vscode/blob/aa31bfc9fd1746626b3efe86f41b9c172d5f4d23/src/vs/editor/common/languages/supports/onEnter.ts#

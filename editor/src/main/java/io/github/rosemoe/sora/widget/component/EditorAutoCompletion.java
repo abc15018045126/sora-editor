@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget.component;
+package io.github.abc15018045126.sora.widget.component;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -35,40 +35,40 @@ import java.lang.ref.WeakReference;
 import java.util.Collection;
 import java.util.List;
 
-import io.github.rosemoe.sora.event.ClickEvent;
-import io.github.rosemoe.sora.event.ColorSchemeUpdateEvent;
-import io.github.rosemoe.sora.event.ContentChangeEvent;
-import io.github.rosemoe.sora.event.EditorFocusChangeEvent;
-import io.github.rosemoe.sora.event.EditorFormatEvent;
-import io.github.rosemoe.sora.event.EditorKeyEvent;
-import io.github.rosemoe.sora.event.EditorLanguageChangeEvent;
-import io.github.rosemoe.sora.event.EditorReleaseEvent;
-import io.github.rosemoe.sora.event.Event;
-import io.github.rosemoe.sora.event.EventManager;
-import io.github.rosemoe.sora.event.ScrollEvent;
-import io.github.rosemoe.sora.event.SelectionChangeEvent;
-import io.github.rosemoe.sora.event.SnippetEvent;
-import io.github.rosemoe.sora.event.Unsubscribe;
-import io.github.rosemoe.sora.lang.Language;
-import io.github.rosemoe.sora.lang.completion.Comparators;
-import io.github.rosemoe.sora.lang.completion.CompletionCancelledException;
-import io.github.rosemoe.sora.lang.completion.CompletionItem;
-import io.github.rosemoe.sora.lang.completion.CompletionPublisher;
-import io.github.rosemoe.sora.lang.styling.StylesUtils;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.ContentReference;
-import io.github.rosemoe.sora.text.Cursor;
-import io.github.rosemoe.sora.text.TextReference;
-import io.github.rosemoe.sora.util.KeyboardUtils;
-import io.github.rosemoe.sora.widget.CodeEditor;
-import io.github.rosemoe.sora.widget.base.EditorPopupWindow;
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme;
+import io.github.abc15018045126.sora.event.ClickEvent;
+import io.github.abc15018045126.sora.event.ColorSchemeUpdateEvent;
+import io.github.abc15018045126.sora.event.ContentChangeEvent;
+import io.github.abc15018045126.sora.event.EditorFocusChangeEvent;
+import io.github.abc15018045126.sora.event.EditorFormatEvent;
+import io.github.abc15018045126.sora.event.EditorKeyEvent;
+import io.github.abc15018045126.sora.event.EditorLanguageChangeEvent;
+import io.github.abc15018045126.sora.event.EditorReleaseEvent;
+import io.github.abc15018045126.sora.event.Event;
+import io.github.abc15018045126.sora.event.EventManager;
+import io.github.abc15018045126.sora.event.ScrollEvent;
+import io.github.abc15018045126.sora.event.SelectionChangeEvent;
+import io.github.abc15018045126.sora.event.SnippetEvent;
+import io.github.abc15018045126.sora.event.Unsubscribe;
+import io.github.abc15018045126.sora.lang.Language;
+import io.github.abc15018045126.sora.lang.completion.Comparators;
+import io.github.abc15018045126.sora.lang.completion.CompletionCancelledException;
+import io.github.abc15018045126.sora.lang.completion.CompletionItem;
+import io.github.abc15018045126.sora.lang.completion.CompletionPublisher;
+import io.github.abc15018045126.sora.lang.styling.StylesUtils;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.ContentReference;
+import io.github.abc15018045126.sora.text.Cursor;
+import io.github.abc15018045126.sora.text.TextReference;
+import io.github.abc15018045126.sora.util.KeyboardUtils;
+import io.github.abc15018045126.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.widget.base.EditorPopupWindow;
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme;
 import kotlin.jvm.functions.Function1;
 
 /**
  * Auto complete window for editing code quicker
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class EditorAutoCompletion extends EditorPopupWindow implements EditorBuiltinComponent {
 
@@ -535,7 +535,7 @@ public class EditorAutoCompletion extends EditorPopupWindow implements EditorBui
 
     /**
      * Check cursor position's span.
-     * If {@link io.github.rosemoe.sora.lang.styling.TextStyle#NO_COMPLETION_BIT} is set, true is returned.
+     * If {@link io.github.abc15018045126.sora.lang.styling.TextStyle#NO_COMPLETION_BIT} is set, true is returned.
      */
     public boolean checkNoCompletion() {
         var pos = editor.getCursor().left();
@@ -609,7 +609,7 @@ public class EditorAutoCompletion extends EditorPopupWindow implements EditorBui
     /**
      * Auto-completion Analyzing thread
      *
-     * @author Rosemoe
+     * @author abc15018045126
      */
     public class CompletionThread extends Thread implements TextReference.Validator {
 
@@ -680,4 +680,5 @@ public class EditorAutoCompletion extends EditorPopupWindow implements EditorBui
     }
 
 }
+
 

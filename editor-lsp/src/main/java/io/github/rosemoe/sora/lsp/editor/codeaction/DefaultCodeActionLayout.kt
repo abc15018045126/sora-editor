@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.lsp.editor.codeaction
+package io.github.abc15018045126.sora.lsp.editor.codeaction
 
 import android.graphics.Outline
 import android.graphics.Typeface
@@ -12,8 +12,8 @@ import android.widget.AbsListView
 import android.widget.LinearLayout
 import android.widget.ListView
 import android.widget.TextView
-import io.github.rosemoe.sora.lsp.editor.curvedTextScale
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lsp.editor.curvedTextScale
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 
 class DefaultCodeActionLayout : CodeActionLayout {
 

@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,20 +18,20 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.event;
+package io.github.abc15018045126.sora.event;
 
 import android.view.MotionEvent;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import io.github.rosemoe.sora.lang.styling.Span;
-import io.github.rosemoe.sora.text.CharPosition;
-import io.github.rosemoe.sora.text.TextRange;
-import io.github.rosemoe.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.lang.styling.Span;
+import io.github.abc15018045126.sora.text.CharPosition;
+import io.github.abc15018045126.sora.text.TextRange;
+import io.github.abc15018045126.sora.widget.CodeEditor;
 
 /**
  * Long press event.
@@ -39,7 +39,7 @@ import io.github.rosemoe.sora.widget.CodeEditor;
  * This event can be intercepted so that the editor framework will do nothing (such as selecting a word). You can take over the
  * procedure. Note that after intercepting an event, it will not be sent to other listeners, either.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class LongPressEvent extends EditorMotionEvent {
 
@@ -50,3 +50,4 @@ public class LongPressEvent extends EditorMotionEvent {
     }
 
 }
+

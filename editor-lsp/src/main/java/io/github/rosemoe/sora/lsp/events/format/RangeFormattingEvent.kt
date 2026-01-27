@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2023  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2023  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,25 +18,25 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.events.format
+package io.github.abc15018045126.sora.lsp.events.format
 
-import io.github.rosemoe.sora.lsp.editor.LspEditor
-import io.github.rosemoe.sora.lsp.editor.getOption
-import io.github.rosemoe.sora.lsp.events.AsyncEventListener
-import io.github.rosemoe.sora.lsp.events.EventContext
-import io.github.rosemoe.sora.lsp.events.EventType
-import io.github.rosemoe.sora.lsp.events.document.applyEdits
-import io.github.rosemoe.sora.lsp.requests.Timeout
-import io.github.rosemoe.sora.lsp.requests.Timeouts
-import io.github.rosemoe.sora.lsp.utils.LSPException
-import io.github.rosemoe.sora.lsp.utils.asLspRange
-import io.github.rosemoe.sora.lsp.utils.createTextDocumentIdentifier
-import io.github.rosemoe.sora.text.Content
-import io.github.rosemoe.sora.text.TextRange
+import io.github.abc15018045126.sora.lsp.editor.LspEditor
+import io.github.abc15018045126.sora.lsp.editor.getOption
+import io.github.abc15018045126.sora.lsp.events.AsyncEventListener
+import io.github.abc15018045126.sora.lsp.events.EventContext
+import io.github.abc15018045126.sora.lsp.events.EventType
+import io.github.abc15018045126.sora.lsp.events.document.applyEdits
+import io.github.abc15018045126.sora.lsp.requests.Timeout
+import io.github.abc15018045126.sora.lsp.requests.Timeouts
+import io.github.abc15018045126.sora.lsp.utils.LSPException
+import io.github.abc15018045126.sora.lsp.utils.asLspRange
+import io.github.abc15018045126.sora.lsp.utils.createTextDocumentIdentifier
+import io.github.abc15018045126.sora.text.Content
+import io.github.abc15018045126.sora.text.TextRange
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.future.await
 import kotlinx.coroutines.withContext

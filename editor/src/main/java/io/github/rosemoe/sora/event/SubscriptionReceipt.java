@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.event;
+package io.github.abc15018045126.sora.event;
 
 import androidx.annotation.NonNull;
 
@@ -31,7 +31,7 @@ import java.lang.ref.WeakReference;
  * Receipt of {@link EventManager#subscribeEvent(Class, EventReceiver)}. You can unsubscribe the event outside
  * the dispatch process from any thread by calling {@link SubscriptionReceipt#unsubscribe()}
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class SubscriptionReceipt<R extends Event> {
 
@@ -64,3 +64,4 @@ public class SubscriptionReceipt<R extends Event> {
     }
 
 }
+

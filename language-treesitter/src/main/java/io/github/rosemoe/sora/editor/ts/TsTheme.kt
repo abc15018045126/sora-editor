@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,19 +18,19 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.editor.ts
+package io.github.abc15018045126.sora.editor.ts
 
 import android.util.SparseLongArray
 import com.itsaky.androidide.treesitter.TSQuery
-import io.github.rosemoe.sora.lang.styling.TextStyle
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lang.styling.TextStyle
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 
 /**
- * Theme for tree-sitter. This is different from [io.github.rosemoe.sora.widget.schemes.EditorColorScheme].
+ * Theme for tree-sitter. This is different from [io.github.abc15018045126.sora.widget.schemes.EditorColorScheme].
  * It is only used for colorizing spans in tree-sitter module. The real colors are still stored in editor
  * color schemes.
  * As what tree-sitter do, we try to match the longest scope.
@@ -40,7 +40,7 @@ import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
  *  set fallback color scheme.
  * Note that colors of 'locals.definition', 'locals.reference', etc. can not be set by this theme object.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 class TsTheme(private val tsQuery: TSQuery) {
 
@@ -57,7 +57,7 @@ class TsTheme(private val tsQuery: TSQuery) {
      *
      * @param rule The rule for locating nodes
      * @param style The style value for those nodes
-     * @see io.github.rosemoe.sora.lang.styling.TextStyle
+     * @see io.github.abc15018045126.sora.lang.styling.TextStyle
      */
     fun putStyleRule(rule: String, style: Long) {
         styles[rule] = style

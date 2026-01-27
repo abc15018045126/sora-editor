@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2023  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2023  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,41 +18,41 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
-package io.github.rosemoe.sora.lsp.editor
+package io.github.abc15018045126.sora.lsp.editor
 
 import androidx.annotation.WorkerThread
-import io.github.rosemoe.sora.annotations.Experimental
-import io.github.rosemoe.sora.event.ContentChangeEvent
-import io.github.rosemoe.sora.event.Event
-import io.github.rosemoe.sora.event.HoverEvent
-import io.github.rosemoe.sora.event.ScrollEvent
-import io.github.rosemoe.sora.event.SelectionChangeEvent
-import io.github.rosemoe.sora.event.SubscriptionReceipt
-import io.github.rosemoe.sora.lang.Language
-import io.github.rosemoe.sora.lsp.client.languageserver.requestmanager.RequestManager
-import io.github.rosemoe.sora.lsp.client.languageserver.serverdefinition.LanguageServerDefinition
-import io.github.rosemoe.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
-import io.github.rosemoe.sora.lsp.editor.event.LspEditorContentChangeEvent
-import io.github.rosemoe.sora.lsp.editor.event.LspEditorHoverEvent
-import io.github.rosemoe.sora.lsp.editor.event.LspEditorScrollEvent
-import io.github.rosemoe.sora.lsp.editor.event.LspEditorSelectionChangeEvent
-import io.github.rosemoe.sora.lsp.editor.format.LspFormatter
-import io.github.rosemoe.sora.lsp.events.EventType
-import io.github.rosemoe.sora.lsp.events.diagnostics.publishDiagnostics
-import io.github.rosemoe.sora.lsp.events.document.documentClose
-import io.github.rosemoe.sora.lsp.events.document.documentOpen
-import io.github.rosemoe.sora.lsp.events.document.documentSave
-import io.github.rosemoe.sora.lsp.requests.Timeout
-import io.github.rosemoe.sora.lsp.requests.Timeouts
-import io.github.rosemoe.sora.lsp.utils.FileUri
-import io.github.rosemoe.sora.lsp.utils.clearVersions
-import io.github.rosemoe.sora.text.CharPosition
-import io.github.rosemoe.sora.widget.CodeEditor
-import io.github.rosemoe.sora.widget.subscribeEvent
+import io.github.abc15018045126.sora.annotations.Experimental
+import io.github.abc15018045126.sora.event.ContentChangeEvent
+import io.github.abc15018045126.sora.event.Event
+import io.github.abc15018045126.sora.event.HoverEvent
+import io.github.abc15018045126.sora.event.ScrollEvent
+import io.github.abc15018045126.sora.event.SelectionChangeEvent
+import io.github.abc15018045126.sora.event.SubscriptionReceipt
+import io.github.abc15018045126.sora.lang.Language
+import io.github.abc15018045126.sora.lsp.client.languageserver.requestmanager.RequestManager
+import io.github.abc15018045126.sora.lsp.client.languageserver.serverdefinition.LanguageServerDefinition
+import io.github.abc15018045126.sora.lsp.client.languageserver.wrapper.LanguageServerWrapper
+import io.github.abc15018045126.sora.lsp.editor.event.LspEditorContentChangeEvent
+import io.github.abc15018045126.sora.lsp.editor.event.LspEditorHoverEvent
+import io.github.abc15018045126.sora.lsp.editor.event.LspEditorScrollEvent
+import io.github.abc15018045126.sora.lsp.editor.event.LspEditorSelectionChangeEvent
+import io.github.abc15018045126.sora.lsp.editor.format.LspFormatter
+import io.github.abc15018045126.sora.lsp.events.EventType
+import io.github.abc15018045126.sora.lsp.events.diagnostics.publishDiagnostics
+import io.github.abc15018045126.sora.lsp.events.document.documentClose
+import io.github.abc15018045126.sora.lsp.events.document.documentOpen
+import io.github.abc15018045126.sora.lsp.events.document.documentSave
+import io.github.abc15018045126.sora.lsp.requests.Timeout
+import io.github.abc15018045126.sora.lsp.requests.Timeouts
+import io.github.abc15018045126.sora.lsp.utils.FileUri
+import io.github.abc15018045126.sora.lsp.utils.clearVersions
+import io.github.abc15018045126.sora.text.CharPosition
+import io.github.abc15018045126.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.widget.subscribeEvent
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.future.future
@@ -243,9 +243,9 @@ class LspEditor(
     /**
      * Connect to the language server to provide the capabilities, this will cause threads blocking. Note: An error will be thrown if the language server is not connected after some time.
      *
-     * @see io.github.rosemoe.sora.lsp.requests.Timeouts
+     * @see io.github.abc15018045126.sora.lsp.requests.Timeouts
      *
-     * @see io.github.rosemoe.sora.lsp.requests.Timeout
+     * @see io.github.abc15018045126.sora.lsp.requests.Timeout
      */
 
     @Throws(TimeoutException::class)
@@ -285,9 +285,9 @@ class LspEditor(
     /**
      * Try to connect to the language server repeatedly, this will cause threads blocking. Note: An error will be thrown if the language server is not connected after some time.
      *
-     * @see io.github.rosemoe.sora.lsp.requests.Timeouts
+     * @see io.github.abc15018045126.sora.lsp.requests.Timeouts
      *
-     * @see io.github.rosemoe.sora.lsp.requests.Timeout
+     * @see io.github.abc15018045126.sora.lsp.requests.Timeout
      */
     @Throws(InterruptedException::class, TimeoutException::class)
     suspend fun connectWithTimeout() {
@@ -452,3 +452,4 @@ class LspEditor(
         dispose()
     }
 }
+

@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * Oniguruma regexp & scanner factory.
  *
- * @author Rosemoe
+ * @author abc15018045126
  */
 public class Oniguruma {
 

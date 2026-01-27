@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.util.Logger;
 
 /**
  * The language configuration interface defines the contract between extensions and various editor features, like

@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,7 +18,7 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
 
@@ -64,7 +64,7 @@ fun Project.configureKotlinExtension() {
 }
 
 subprojects {
-    group = "io.github.rosemoe"
+    group = "io.github.abc15018045126"
     version = Versions.versionName
 
     plugins.withId("com.android.application") {
@@ -79,7 +79,7 @@ subprojects {
 
     plugins.withId("com.vanniktech.maven.publish.base") {
         configure<MavenPublishBaseExtension> {
-            group = "io.github.rosemoe"
+            group = "io.github.abc15018045126"
             version = Versions.versionName
             pomFromGradleProperties()
             publishToMavenCentral()
@@ -100,3 +100,4 @@ subprojects {
 tasks.register<Delete>("clean").configure {
     delete(rootProject.layout.buildDirectory)
 }
+

@@ -1,7 +1,7 @@
 /*
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  */
-package io.github.rosemoe.sora.widget.layout;
+package io.github.abc15018045126.sora.widget.layout;
 
 import android.util.SparseArray;
 
@@ -33,15 +33,15 @@ import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import io.github.rosemoe.sora.graphics.Paint;
-import io.github.rosemoe.sora.graphics.SingleCharacterWidths;
-import io.github.rosemoe.sora.lang.analysis.StyleUpdateRange;
-import io.github.rosemoe.sora.lang.styling.inlayHint.InlayHint;
-import io.github.rosemoe.sora.text.Content;
-import io.github.rosemoe.sora.text.ContentLine;
-import io.github.rosemoe.sora.util.BlockIntList;
-import io.github.rosemoe.sora.util.IntPair;
-import io.github.rosemoe.sora.widget.CodeEditor;
+import io.github.abc15018045126.sora.graphics.Paint;
+import io.github.abc15018045126.sora.graphics.SingleCharacterWidths;
+import io.github.abc15018045126.sora.lang.analysis.StyleUpdateRange;
+import io.github.abc15018045126.sora.lang.styling.inlayHint.InlayHint;
+import io.github.abc15018045126.sora.text.Content;
+import io.github.abc15018045126.sora.text.ContentLine;
+import io.github.abc15018045126.sora.util.BlockIntList;
+import io.github.abc15018045126.sora.util.IntPair;
+import io.github.abc15018045126.sora.widget.CodeEditor;
 
 /**
  * Layout implementation of editor
@@ -375,3 +375,4 @@ public class LineBreakLayout extends AbstractLayout {
     }
 
 }
+

@@ -1,7 +1,7 @@
 /*******************************************************************************
  *    sora-editor - the awesome code editor for Android
- *    https://github.com/Rosemoe/sora-editor
- *    Copyright (C) 2020-2024  Rosemoe
+ *    https://github.com/abc15018045126/sora-editor
+ *    Copyright (C) 2020-2024  abc15018045126
  *
  *     This library is free software; you can redistribute it and/or
  *     modify it under the terms of the GNU Lesser General Public
@@ -18,10 +18,10 @@
  *     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  *     USA
  *
- *     Please contact Rosemoe by email 2073412493@qq.com if you need
+ *     Please contact abc15018045126 by email 2073412493@qq.com if you need
  *     additional information or have any questions
  ******************************************************************************/
-package io.github.rosemoe.sora.app
+package io.github.abc15018045126.sora.app
 
 import android.app.AlertDialog
 import android.content.DialogInterface
@@ -46,66 +46,66 @@ import io.github.dingyi222666.monarch.languages.JavaLanguage
 import io.github.dingyi222666.monarch.languages.KotlinLanguage
 import io.github.dingyi222666.monarch.languages.PythonLanguage
 import io.github.dingyi222666.monarch.languages.TypescriptLanguage
-import io.github.rosemoe.sora.app.databinding.ActivityMainBinding
-import io.github.rosemoe.sora.app.lsp.LspTestActivity
-import io.github.rosemoe.sora.app.lsp.LspTestJavaActivity
-import io.github.rosemoe.sora.app.tests.TestActivity
-import io.github.rosemoe.sora.event.ContentChangeEvent
-import io.github.rosemoe.sora.event.EditorKeyEvent
-import io.github.rosemoe.sora.event.KeyBindingEvent
-import io.github.rosemoe.sora.event.PublishSearchResultEvent
-import io.github.rosemoe.sora.event.SelectionChangeEvent
-import io.github.rosemoe.sora.event.SideIconClickEvent
-import io.github.rosemoe.sora.event.TextSizeChangeEvent
-import io.github.rosemoe.sora.graphics.inlayHint.ColorInlayHintRenderer
-import io.github.rosemoe.sora.graphics.inlayHint.TextInlayHintRenderer
-import io.github.rosemoe.sora.lang.EmptyLanguage
-import io.github.rosemoe.sora.lang.JavaLanguageSpec
-import io.github.rosemoe.sora.lang.TsLanguageJava
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticRegion
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticsContainer
-import io.github.rosemoe.sora.lang.styling.color.ConstColor
-import io.github.rosemoe.sora.lang.styling.inlayHint.ColorInlayHint
-import io.github.rosemoe.sora.lang.styling.inlayHint.InlayHintsContainer
-import io.github.rosemoe.sora.lang.styling.inlayHint.TextInlayHint
-import io.github.rosemoe.sora.langs.java.JavaLanguage
-import io.github.rosemoe.sora.langs.monarch.MonarchColorScheme
-import io.github.rosemoe.sora.langs.monarch.MonarchLanguage
-import io.github.rosemoe.sora.langs.monarch.registry.MonarchGrammarRegistry
-import io.github.rosemoe.sora.langs.monarch.registry.dsl.monarchLanguages
-import io.github.rosemoe.sora.langs.monarch.registry.model.ThemeSource
-import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme
-import io.github.rosemoe.sora.langs.textmate.TextMateLanguage
-import io.github.rosemoe.sora.langs.textmate.registry.FileProviderRegistry
-import io.github.rosemoe.sora.langs.textmate.registry.GrammarRegistry
-import io.github.rosemoe.sora.langs.textmate.registry.ThemeRegistry
-import io.github.rosemoe.sora.langs.textmate.registry.dsl.languages
-import io.github.rosemoe.sora.langs.textmate.registry.model.DefaultGrammarDefinition
-import io.github.rosemoe.sora.langs.textmate.registry.model.ThemeModel
-import io.github.rosemoe.sora.langs.textmate.registry.provider.AssetsFileResolver
-import io.github.rosemoe.sora.text.ContentIO
-import io.github.rosemoe.sora.text.LineSeparator
-import io.github.rosemoe.sora.util.regex.RegexBackrefGrammar
-import io.github.rosemoe.sora.utils.CrashHandler
-import io.github.rosemoe.sora.utils.codePointStringAt
-import io.github.rosemoe.sora.utils.escapeCodePointIfNecessary
-import io.github.rosemoe.sora.utils.toast
-import io.github.rosemoe.sora.widget.CodeEditor
-import io.github.rosemoe.sora.widget.EditorSearcher.SearchOptions
-import io.github.rosemoe.sora.widget.SelectionMovement
-import io.github.rosemoe.sora.widget.component.EditorAutoCompletion
-import io.github.rosemoe.sora.widget.component.Magnifier
-import io.github.rosemoe.sora.widget.ext.EditorSpanInteractionHandler
-import io.github.rosemoe.sora.widget.getComponent
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
-import io.github.rosemoe.sora.widget.schemes.SchemeDarcula
-import io.github.rosemoe.sora.widget.schemes.SchemeEclipse
-import io.github.rosemoe.sora.widget.schemes.SchemeGitHub
-import io.github.rosemoe.sora.widget.schemes.SchemeNotepadXX
-import io.github.rosemoe.sora.widget.schemes.SchemeVS2019
-import io.github.rosemoe.sora.widget.style.LineInfoPanelPosition
-import io.github.rosemoe.sora.widget.style.LineInfoPanelPositionMode
-import io.github.rosemoe.sora.widget.subscribeAlways
+import io.github.abc15018045126.sora.app.databinding.ActivityMainBinding
+import io.github.abc15018045126.sora.app.lsp.LspTestActivity
+import io.github.abc15018045126.sora.app.lsp.LspTestJavaActivity
+import io.github.abc15018045126.sora.app.tests.TestActivity
+import io.github.abc15018045126.sora.event.ContentChangeEvent
+import io.github.abc15018045126.sora.event.EditorKeyEvent
+import io.github.abc15018045126.sora.event.KeyBindingEvent
+import io.github.abc15018045126.sora.event.PublishSearchResultEvent
+import io.github.abc15018045126.sora.event.SelectionChangeEvent
+import io.github.abc15018045126.sora.event.SideIconClickEvent
+import io.github.abc15018045126.sora.event.TextSizeChangeEvent
+import io.github.abc15018045126.sora.graphics.inlayHint.ColorInlayHintRenderer
+import io.github.abc15018045126.sora.graphics.inlayHint.TextInlayHintRenderer
+import io.github.abc15018045126.sora.lang.EmptyLanguage
+import io.github.abc15018045126.sora.lang.JavaLanguageSpec
+import io.github.abc15018045126.sora.lang.TsLanguageJava
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticRegion
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticsContainer
+import io.github.abc15018045126.sora.lang.styling.color.ConstColor
+import io.github.abc15018045126.sora.lang.styling.inlayHint.ColorInlayHint
+import io.github.abc15018045126.sora.lang.styling.inlayHint.InlayHintsContainer
+import io.github.abc15018045126.sora.lang.styling.inlayHint.TextInlayHint
+import io.github.abc15018045126.sora.langs.java.JavaLanguage
+import io.github.abc15018045126.sora.langs.monarch.MonarchColorScheme
+import io.github.abc15018045126.sora.langs.monarch.MonarchLanguage
+import io.github.abc15018045126.sora.langs.monarch.registry.MonarchGrammarRegistry
+import io.github.abc15018045126.sora.langs.monarch.registry.dsl.monarchLanguages
+import io.github.abc15018045126.sora.langs.monarch.registry.model.ThemeSource
+import io.github.abc15018045126.sora.langs.textmate.TextMateColorScheme
+import io.github.abc15018045126.sora.langs.textmate.TextMateLanguage
+import io.github.abc15018045126.sora.langs.textmate.registry.FileProviderRegistry
+import io.github.abc15018045126.sora.langs.textmate.registry.GrammarRegistry
+import io.github.abc15018045126.sora.langs.textmate.registry.ThemeRegistry
+import io.github.abc15018045126.sora.langs.textmate.registry.dsl.languages
+import io.github.abc15018045126.sora.langs.textmate.registry.model.DefaultGrammarDefinition
+import io.github.abc15018045126.sora.langs.textmate.registry.model.ThemeModel
+import io.github.abc15018045126.sora.langs.textmate.registry.provider.AssetsFileResolver
+import io.github.abc15018045126.sora.text.ContentIO
+import io.github.abc15018045126.sora.text.LineSeparator
+import io.github.abc15018045126.sora.util.regex.RegexBackrefGrammar
+import io.github.abc15018045126.sora.utils.CrashHandler
+import io.github.abc15018045126.sora.utils.codePointStringAt
+import io.github.abc15018045126.sora.utils.escapeCodePointIfNecessary
+import io.github.abc15018045126.sora.utils.toast
+import io.github.abc15018045126.sora.widget.CodeEditor
+import io.github.abc15018045126.sora.widget.EditorSearcher.SearchOptions
+import io.github.abc15018045126.sora.widget.SelectionMovement
+import io.github.abc15018045126.sora.widget.component.EditorAutoCompletion
+import io.github.abc15018045126.sora.widget.component.Magnifier
+import io.github.abc15018045126.sora.widget.ext.EditorSpanInteractionHandler
+import io.github.abc15018045126.sora.widget.getComponent
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.widget.schemes.SchemeDarcula
+import io.github.abc15018045126.sora.widget.schemes.SchemeEclipse
+import io.github.abc15018045126.sora.widget.schemes.SchemeGitHub
+import io.github.abc15018045126.sora.widget.schemes.SchemeNotepadXX
+import io.github.abc15018045126.sora.widget.schemes.SchemeVS2019
+import io.github.abc15018045126.sora.widget.style.LineInfoPanelPosition
+import io.github.abc15018045126.sora.widget.style.LineInfoPanelPositionMode
+import io.github.abc15018045126.sora.widget.subscribeAlways
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -376,8 +376,8 @@ class MainActivity : AppCompatActivity() {
      */
     private fun setupMonarch() {
         // Add assets file provider so that files in assets can be loaded
-        io.github.rosemoe.sora.langs.monarch.registry.FileProviderRegistry.addProvider(
-            io.github.rosemoe.sora.langs.monarch.registry.provider.AssetsFileResolver(
+        io.github.abc15018045126.sora.langs.monarch.registry.FileProviderRegistry.addProvider(
+            io.github.abc15018045126.sora.langs.monarch.registry.provider.AssetsFileResolver(
                 applicationContext.assets // use application context
             )
         )
@@ -395,8 +395,8 @@ class MainActivity : AppCompatActivity() {
 
         themes.forEach { name ->
             val path = "textmate/$name.json"
-            io.github.rosemoe.sora.langs.monarch.registry.ThemeRegistry.loadTheme(
-                io.github.rosemoe.sora.langs.monarch.registry.model.ThemeModel(
+            io.github.abc15018045126.sora.langs.monarch.registry.ThemeRegistry.loadTheme(
+                io.github.abc15018045126.sora.langs.monarch.registry.model.ThemeModel(
                     ThemeSource(path, name)
                 ).apply {
                     if (name != "quietlight") {
@@ -406,7 +406,7 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        io.github.rosemoe.sora.langs.monarch.registry.ThemeRegistry.setTheme("quietlight")
+        io.github.abc15018045126.sora.langs.monarch.registry.ThemeRegistry.setTheme("quietlight")
     }
 
     /**
@@ -511,7 +511,7 @@ class MainActivity : AppCompatActivity() {
         var editorColorScheme = editor.colorScheme
         if (editorColorScheme !is MonarchColorScheme) {
             editorColorScheme =
-                MonarchColorScheme.create(io.github.rosemoe.sora.langs.monarch.registry.ThemeRegistry.currentTheme)
+                MonarchColorScheme.create(io.github.abc15018045126.sora.langs.monarch.registry.ThemeRegistry.currentTheme)
             editor.colorScheme = editorColorScheme
             switchThemeIfRequired(this, editor)
         }

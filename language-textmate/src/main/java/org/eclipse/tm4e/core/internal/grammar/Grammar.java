@@ -48,7 +48,7 @@ import org.eclipse.tm4e.core.internal.rule.RuleId;
 import org.eclipse.tm4e.core.internal.utils.ObjectCloner;
 import org.eclipse.tm4e.core.internal.utils.StringUtils;
 
-import io.github.rosemoe.sora.util.Logger;
+import io.github.abc15018045126.sora.util.Logger;
 
 /**
  * TextMate grammar implementation.

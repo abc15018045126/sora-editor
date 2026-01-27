@@ -1,4 +1,4 @@
-package io.github.rosemoe.sora.lsp.editor.text
+package io.github.abc15018045126.sora.lsp.editor.text
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory

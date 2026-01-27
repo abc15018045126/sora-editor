@@ -1,10 +1,10 @@
-package io.github.rosemoe.sora.widget.component
+package io.github.abc15018045126.sora.widget.component
 
 import android.view.LayoutInflater
 import android.view.View
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticDetail
-import io.github.rosemoe.sora.lang.diagnostic.DiagnosticRegion
-import io.github.rosemoe.sora.widget.schemes.EditorColorScheme
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticDetail
+import io.github.abc15018045126.sora.lang.diagnostic.DiagnosticRegion
+import io.github.abc15018045126.sora.widget.schemes.EditorColorScheme
 
 /**
  * Defines the contract between [EditorDiagnosticTooltipWindow] and its layout implementation.
