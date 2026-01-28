@@ -167,5 +167,19 @@ public interface Layout extends ContentListener {
      */
     void invalidateLines(StyleUpdateRange range);
 
+    /**
+     * Get row top y offset
+     */
+    int getRowTop(int row);
+
+    /**
+     * Get row bottom y offset
+     */
+    int getRowBottom(int row);
+
+    /**
+     * Get row index for y offset
+     */
+    int getRowIndexForY(float y);
 }
 

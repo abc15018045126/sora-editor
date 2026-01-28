@@ -252,7 +252,22 @@ public class LineBreakLayout extends AbstractLayout {
 
     @Override
     public int getLayoutHeight() {
-        return text.getLineCount() * editor.getRowHeight();
+        return text.getLineCount() * editor.getLogicalRowHeight();
+    }
+
+    @Override
+    public int getRowTop(int row) {
+        return row * editor.getLogicalRowHeight();
+    }
+
+    @Override
+    public int getRowBottom(int row) {
+        return (row + 1) * editor.getLogicalRowHeight();
+    }
+
+    @Override
+    public int getRowIndexForY(float y) {
+        return (int) (y / editor.getLogicalRowHeight());
     }
 
     @Override

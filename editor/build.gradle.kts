@@ -24,16 +24,26 @@
 
 plugins {
     id("com.android.library")
-    id("com.vanniktech.maven.publish.base")
     id("kotlin-android")
 }
 
 android {
     namespace = "io.github.abc15018045126.sora"
+    compileSdk = 35
 
     defaultConfig {
+        minSdk = 21
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_21
+        targetCompatibility = JavaVersion.VERSION_21
+    }
+
+    kotlin {
+        jvmToolchain(21)
     }
 
     buildTypes {

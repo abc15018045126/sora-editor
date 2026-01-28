@@ -84,7 +84,7 @@ public class WordwrapLayout extends AbstractLayout {
         }
         miniGraphWidth = (editor.getNonPrintablePaintingFlags() & CodeEditor.FLAG_DRAW_SOFT_WRAP) != 0 ?
                 editor.getRenderer().getMiniGraphWidth() : 0f;
-        width = editor.getWidth() - (int) (editor.measureTextRegionOffset() + editor.getTextPaint().measureText("a")) - (int) miniGraphWidth * 2;
+        width = (int) (editor.getWidth() - editor.measureTextRegionOffset() - editor.getExtraMarginRight() - miniGraphWidth * 2);
         breakAllLines();
     }
 
@@ -113,6 +113,7 @@ public class WordwrapLayout extends AbstractLayout {
                     for (WordwrapResult wordwrapResult : r2) {
                         rowTable.addAll(wordwrapResult.regions);
                     }
+                    updateYOffsets(0);
                     editor.setLayoutBusy(false);
                     editor.getEventHandler().scrollBy(0, 0);
                 });
@@ -183,6 +184,17 @@ public class WordwrapLayout extends AbstractLayout {
             newRegions.addAll(breakLine(i, text.getLine(i), null));
         }
         rowTable.addAll(insertPosition, newRegions);
+        updateYOffsets(insertPosition);
+    }
+
+    private void updateYOffsets(int startRow) {
+        if (rowTable == null || rowTable.isEmpty()) return;
+        int y = startRow > 0 ? rowTable.get(startRow - 1).yOffset + rowTable.get(startRow - 1).height : 0;
+        for (int i = startRow; i < rowTable.size(); i++) {
+            var region = rowTable.get(i);
+            region.yOffset = y;
+            y += region.height;
+        }
     }
 
     /**
@@ -211,8 +223,11 @@ public class WordwrapLayout extends AbstractLayout {
 
         var rows = tr.breakText(width, antiWordBreaking);
         var results = new ArrayList<RowRegion>();
-        for (var row : rows) {
-            results.add(new RowRegion(line, row.startColumn, row.endColumn, row.inlayHints, row.rowWidth, isRtlBased));
+        for (int i = 0; i < rows.size(); i++) {
+            var row = rows.get(i);
+            boolean isTrailing = (i == rows.size() - 1);
+            int h = isTrailing ? editor.getLogicalRowHeight() : editor.getWrapRowHeight();
+            results.add(new RowRegion(line, row.startColumn, row.endColumn, row.inlayHints, row.rowWidth, isRtlBased, h));
         }
         return results;
     }
@@ -355,9 +370,41 @@ public class WordwrapLayout extends AbstractLayout {
     @Override
     public int getLayoutHeight() {
         if (rowTable.isEmpty()) {
-            return editor.getRowHeight() * text.getLineCount();
+            return editor.getLogicalRowHeight() * text.getLineCount();
         }
-        return rowTable.size() * editor.getRowHeight();
+        var last = rowTable.get(rowTable.size() - 1);
+        return last.yOffset + last.height;
+    }
+
+    @Override
+    public int getRowTop(int row) {
+        if (rowTable.isEmpty()) return row * editor.getLogicalRowHeight();
+        return rowTable.get(row).yOffset;
+    }
+
+    @Override
+    public int getRowBottom(int row) {
+        if (rowTable.isEmpty()) return (row + 1) * editor.getLogicalRowHeight();
+        var region = rowTable.get(row);
+        return region.yOffset + region.height;
+    }
+
+    @Override
+    public int getRowIndexForY(float y) {
+        if (rowTable.isEmpty()) return (int) (y / editor.getLogicalRowHeight());
+        int left = 0, right = rowTable.size() - 1;
+        while (left <= right) {
+            int mid = (left + right) / 2;
+            var region = rowTable.get(mid);
+            if (y < region.yOffset) {
+                right = mid - 1;
+            } else if (y >= region.yOffset + region.height) {
+                left = mid + 1;
+            } else {
+                return mid;
+            }
+        }
+        return Math.max(0, Math.min(rowTable.size() - 1, left));
     }
 
     @Override
@@ -405,7 +452,7 @@ public class WordwrapLayout extends AbstractLayout {
             int res = tr.getIndexForCursorOffset(xOffset);
             return IntPair.pack(line, res);
         }
-        int row = (int) (yOffset / editor.getRowHeight());
+        int row = getRowIndexForY(yOffset);
         row = Math.max(0, Math.min(row, rowTable.size() - 1));
         RowRegion region = rowTable.get(row);
         if (region.startColumn != 0) {
@@ -508,13 +555,17 @@ public class WordwrapLayout extends AbstractLayout {
         float rowWidth;
         boolean displayFromRight;
 
-        RowRegion(int line, int start, int end, List<InlayHint> inlayHints, float rowWidth, boolean displayFromRight) {
+        int height;
+        int yOffset;
+
+        RowRegion(int line, int start, int end, List<InlayHint> inlayHints, float rowWidth, boolean displayFromRight, int height) {
             this.line = line;
             startColumn = start;
             endColumn = end;
             this.inlayHints = inlayHints;
             this.rowWidth = rowWidth;
             this.displayFromRight = displayFromRight;
+            this.height = height;
         }
 
         public Row toRow(boolean isLeadingRow, boolean isTrailingRow, float layoutWidth) {

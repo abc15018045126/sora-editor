@@ -283,6 +283,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     private float dividerWidth;
     private float dividerMarginLeft;
     private float dividerMarginRight;
+    private float extraMarginRight;
     private float insertSelectionWidth;
     /**
      * Margin left for line number
@@ -293,6 +294,8 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     private float lineInfoTextSize;
     private float lineSpacingMultiplier = 1f;
     private float lineSpacingAdd = 0f;
+    private float wrapLineSpacingMultiplier = 1f;
+    private float wrapLineSpacingAdd = 0f;
     private float lineNumberMarginLeft;
     private float verticalExtraSpaceFactor = 0.5f;
     private boolean waitForNextChange;
@@ -2805,6 +2808,17 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
         return touchHandler;
     }
 
+    public float getExtraMarginRight() {
+        return extraMarginRight;
+    }
+
+    public void setExtraMarginRight(float extraMarginRight) {
+        this.extraMarginRight = extraMarginRight;
+        requestLayoutIfNeeded();
+        createLayout();
+        invalidate();
+    }
+
     /**
      * @return Margin left of divider line
      * @see CodeEditor#setDividerMargin(float, float)
@@ -2836,6 +2850,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
         dividerMarginLeft = marginLeft;
         dividerMarginRight = marginRight;
         requestLayoutIfNeeded();
+        createLayout();
         invalidate();
     }
 
@@ -2854,6 +2869,7 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     public void setLineNumberMarginLeft(@Px float lineNumberMarginLeft) {
         this.lineNumberMarginLeft = lineNumberMarginLeft;
         requestLayoutIfNeeded();
+        createLayout();
         invalidate();
     }
 
@@ -3057,7 +3073,8 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * @return first visible row
      */
     public int getFirstVisibleRow() {
-        return Math.max(0, getOffsetY() / getRowHeight());
+        if (layout == null) return getOffsetY() / getLogicalRowHeight();
+        return layout.getRowIndexForY(getOffsetY());
     }
 
     /**
@@ -3066,7 +3083,8 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * @return last visible row
      */
     public int getLastVisibleRow() {
-        return Math.max(0, Math.min(layout.getRowCount() - 1, (getOffsetY() + getHeight()) / getRowHeight()));
+        if (layout == null) return (getOffsetY() + getHeight()) / getLogicalRowHeight();
+        return Math.max(0, Math.min(layout.getRowCount() - 1, layout.getRowIndexForY(getOffsetY() + getHeight())));
     }
 
     /**
@@ -3104,6 +3122,18 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
     public void setLineSpacing(float add, float mult) {
         lineSpacingAdd = add;
         lineSpacingMultiplier = mult;
+        requestLayout();
+        invalidate();
+    }
+
+    /**
+     * Set wrap line spacing
+     */
+    public void setWrapLineSpacing(float add, float mult) {
+        wrapLineSpacingAdd = add;
+        wrapLineSpacingMultiplier = mult;
+        requestLayout();
+        invalidate();
     }
 
     /**
@@ -3147,8 +3177,15 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * Get actual line spacing in pixels.
      */
     public int getLineSpacingPixels() {
+        return getLineSpacingPixels(lineSpacingMultiplier, lineSpacingAdd);
+    }
+
+    /**
+     * Get actual line spacing in pixels.
+     */
+    public int getLineSpacingPixels(float multiplier, float add) {
         var metrics = renderer.metricsText;
-        return ((int) ((metrics.descent - metrics.ascent) * (lineSpacingMultiplier - 1f) + lineSpacingAdd)) / 2 * 2;
+        return ((int) ((metrics.descent - metrics.ascent) * (multiplier - 1f) + add)) / 2 * 2;
     }
 
     /**
@@ -3169,9 +3206,31 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * @return height of single row
      */
     public int getRowHeight() {
+        return getLogicalRowHeight();
+    }
+
+    /**
+     * Get logical row height
+     */
+    public int getLogicalRowHeight() {
         var metrics = renderer.metricsText;
-        // Do not let the row height be zero...
-        return Math.max(1, metrics.descent - metrics.ascent + getLineSpacingPixels());
+        return Math.max(1, metrics.descent - metrics.ascent + getLineSpacingPixels(lineSpacingMultiplier, lineSpacingAdd));
+    }
+
+    /**
+     * Get wrap row height
+     */
+    public int getWrapRowHeight() {
+        var metrics = renderer.metricsText;
+        return Math.max(1, metrics.descent - metrics.ascent + getLineSpacingPixels(wrapLineSpacingMultiplier, wrapLineSpacingAdd));
+    }
+
+    /**
+     * Get row height for specific row
+     */
+    public int getRowHeight(int row) {
+        if (layout == null) return getRowHeight();
+        return layout.getRowAt(row).isTrailingRow ? getLogicalRowHeight() : getWrapRowHeight();
     }
 
     /**
@@ -3181,7 +3240,8 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * @return top y offset
      */
     public int getRowTop(int row) {
-        return getRowHeight() * row;
+        if (layout == null) return getLogicalRowHeight() * row;
+        return layout.getRowTop(row);
     }
 
     /**
@@ -3191,7 +3251,8 @@ public class CodeEditor extends View implements ContentListener, Formatter.Forma
      * @return Bottom y offset
      */
     public int getRowBottom(int row) {
-        return getRowHeight() * (row + 1);
+        if (layout == null) return getLogicalRowHeight() * (row + 1);
+        return layout.getRowBottom(row);
     }
 
     /**
