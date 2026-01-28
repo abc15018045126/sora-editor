@@ -20,6 +20,22 @@ Note that statements in other languages may not be up-to-date.
 
 **Issues and pull requests are welcome.**
 
+## ⚠️ Independent Development & Major Changes
+
+This repository is now being developed independently from the original author [Rosemoe/sora-editor](https://github.com/Rosemoe/sora-editor). Significant changes have been made to the underlying architecture and package structure.
+
+**Major Changes:**
+*   **Package Renaming**: To avoid confusion and facilitate independent distribution, the package name has been globally changed to `io.github.abc15018045126.sora`.
+*   **Sync Advisory**: Due to massive changes in package names and file paths, **DO NOT sync with the upstream repository via direct Git pull/merge**. This will lead to unresolvable conflicts. If you wish to incorporate upstream features, manual porting of logic is highly recommended.
+*   **How to Migrate/Revert**: If you want to use features from the original project while keeping our changes, you will need to manually handle package mapping or cherry-pick the logic from this repository into the original package structure.
+
+**New Features (as of v0.0.2):**
+*   **Independent Wrap Line Spacing**: Use `wrapLineSpacingMultiplier` and `wrapLineSpacingExtra` to configure line spacing for wrapped lines independently from regular line spacing.
+*   **Current Line Highlighting**: Toggle current line background highlighting and customize its color (including transparent support).
+*   **Highly Customizable Cursor (Caret)**:
+    *   Custom cursor color and width.
+    *   Custom selection handle styles: Side Drop, Center Drop, or **completely hide handles** (classic caret only).
+
 ## Features
 
 - [x] Incremental syntax highlight
