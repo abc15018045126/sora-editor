@@ -25,6 +25,7 @@
 plugins {
     id("com.android.library")
     id("kotlin-android")
+    id("maven-publish")
 }
 
 android {
@@ -50,6 +51,12 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+    }
+    
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
         }
     }
 }
